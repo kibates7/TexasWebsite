@@ -1,0 +1,95 @@
+div#texas {
+	width: 25%;
+	position: relative;
+	perspective: 1200px;
+	margin: 0 auto;
+}
+div#texas img {
+	position: absolute;
+	max-width: 100%;
+	left:-50px;
+	transform: rotate3d(0, 0, 0, 0deg);
+	transition-duration: 1s;
+}
+div#texas img#upperRight {
+	transform-origin: top center;
+	transition-delay: 1s;
+}
+div#texas:active img#upperRight {
+	transform: rotate3d(1, 0, 0, 180deg);
+	transition-delay: 2s;
+
+  left:-47px;
+  z-index: 1;
+}
+div#texas img#right {
+	transform-origin: top right;
+	transition-delay: 1s;
+}
+div#texas:active img#right {
+	transform: rotate3d(0, 1, 0, 180deg);
+	transition-delay: 1s;
+  z-index: 1;
+
+}
+div#texas img#rightLeft {
+	transform-origin: top right;
+	transition-delay: 1s;
+}
+div#texas:active img#rightLeft {
+	transform: rotate3d(3, 1, 0, -180deg);
+	transition-delay: 1s;
+}
+div#texas img#bottom {
+	transform-origin: center bottom;
+	transition-delay: 2.5s;
+}
+div#texas:active img#bottom {
+	transform: rotate3d(1, 0, 0, 180deg);
+	transition-delay: .5s;
+  top:-73px;
+  left:-100px;
+}
+div#texas img#left {
+	transform-origin: left top;
+	transition-delay: 2s;
+  left: -50px
+}
+div#texas:active img#left {
+	transform: rotate3d(0, 1, 0, -180deg);
+	transition-delay: 1s;
+}
+div#texas img#top {
+	transform-origin: top center;
+	transition-delay: 1.5s;
+}
+div#texas:active img#top {
+  left:-470px;
+
+	transform: rotate3d(1, 0, 0, 180deg);
+	transition-delay: 1.5s;
+  z-index: 1;
+}
+#texas{
+  position: relative;
+   top:330px;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+   width: 100px;
+   height: 100px;
+}
+div#texas img#gobig {
+	transform-origin: top center;
+	transition-delay: 0s;
+
+}
+div#texas:active img#gobig {
+
+
+	transform: rotate3d(1, 0, 0, 180deg);
+	transition-delay: 0s;
+  
+
+}

@@ -64,7 +64,7 @@ div#texas img#top {
 	transition-delay: 1.5s;
 }
 div#texas:active img#top {
-  left:-470px;
+  left:-307px;
 
 	transform: rotate3d(1, 0, 0, 180deg);
 	transition-delay: 1.5s;

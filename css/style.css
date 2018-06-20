@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1e366c;
+}
+
+#texas {
+   position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	opacity: 0;
+}
+
+#gobig_center {
+   position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#gobig_center img{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#gobig_center img.transparent{
+	opacity:0;
+}
+
+#start_btn {
+  position:absolute; 
+  margin: 0 auto;
+  left: 48%;
+  right: 0;
+  bottom:18%;
+  border-radius: 50px;
+  border: 1px dashed white;
+}

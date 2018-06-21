@@ -13,30 +13,28 @@
 		 
 	<script>
 		$(document).ready(function() {
+			$("#texas").hide();
+			$("#tour_btn").hide();
+		
 			$("#start_btn").click(function() {
 				//$("#gobig_center img.top").fadeOut(500);	
 				$("#gobig_center img.top").toggleClass("transparent");	
 				$("#gobig_center").delay(2000).fadeOut(500);
-				$("#start_btn").delay(2000).fadeOut(500);
+				$("#start_btn").delay(750).fadeOut(500);
+				$("#tour_btn").delay(4000).fadeIn(2000);
+				$("#texas").delay(2500).fadeIn(1000);
 			});
 		});
 	</script>
 	
-	<script>
-		$(document).ready(function() {
-			$("#texas").hide();
-		
-			$("#start_btn").click(function() {
-				$("#texas").delay(2500).fadeIn(1000);	
-			});
-		});
-	</script>
+	
 
 	</head>
 
 <body>
 
-  <img id="texas" src="img/gobigtexas2.png" width="70%" height="100%"/>
+  <img id="texas" src="img/gobigtexas2.png" width="60%" height="auto"/>
+  <a href="slidepages/slide1.html" id="tour_btn" class="btn btn-danger">Click<br>Here</a>
   
   <div id="gobig_center" style="background-color:black; border: 5px solid black; border-radius: 5px; width:20%; height:40%">
 	<img class="bottom" src="img/gobigtexas_blue.png" alt="Title" width="100%" height="100%"/>

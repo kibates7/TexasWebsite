@@ -1,7 +1,10 @@
+body {
+    background-color: black;
+}
 div#texas {
 	width: 25%;
 	position: relative;
-	perspective: 1200px;
+	perspective: 1000px;
 	margin: 0 auto;
 }
 div#texas img {
@@ -14,22 +17,30 @@ div#texas img {
 div#texas img#upperRight {
 	transform-origin: top center;
 	transition-delay: 1s;
+     position: absolute;
+    left: 75px;
+    top: 170px;
+    visibility: hidden;
 }
 div#texas:active img#upperRight {
 	transform: rotate3d(1, 0, 0, 180deg);
 	transition-delay: 2s;
-
-  left:-47px;
-  z-index: 1;
+    position: absolute;
+    left: 75px;
+    top: 170px;
+    visibility: inherit;
+  
 }
 div#texas img#right {
 	transform-origin: top right;
 	transition-delay: 1s;
+    visibility: hidden;
 }
 div#texas:active img#right {
 	transform: rotate3d(0, 1, 0, 180deg);
 	transition-delay: 1s;
-  z-index: 1;
+    visibility: inherit;
+  
 
 }
 div#texas img#rightLeft {
@@ -43,32 +54,67 @@ div#texas:active img#rightLeft {
 div#texas img#bottom {
 	transform-origin: center bottom;
 	transition-delay: 2.5s;
+    top:-156px;
+  left:-70px;
+    visibility: hidden;
 }
 div#texas:active img#bottom {
 	transform: rotate3d(1, 0, 0, 180deg);
 	transition-delay: .5s;
-  top:-73px;
-  left:-100px;
+  top:-156px;
+  left:-70px;
+    visibility: inherit;
 }
 div#texas img#left {
 	transform-origin: left top;
 	transition-delay: 2s;
-  left: -50px
+  position: absolute;
+    top: 12px;
+    left: 28px;
+    visibility: hidden;
 }
 div#texas:active img#left {
 	transform: rotate3d(0, 1, 0, -180deg);
 	transition-delay: 1s;
+    position: absolute;
+    top: 12px;
+    left: 28px;
+    visibility:inherit;
 }
+
+div#texas img#farleft {
+	transform-origin: left top;
+	transition-delay: 3s;
+  position: absolute;
+    top: -88px;
+    left: -388px;
+    visibility: hidden;
+}
+div#texas:active img#farleft {
+	transform: rotate3d(0, 1, 0, -180deg);
+	transition-delay: 2s;
+    position: absolute;
+    top: -88px;
+    left: -388px;
+    visibility:inherit;
+}
+
 div#texas img#top {
 	transform-origin: top center;
 	transition-delay: 1.5s;
+    position: absolute;
+    left: -420px;
+    top: 100px;
+    visibility: hidden;
 }
 div#texas:active img#top {
-  left:-307px;
-
 	transform: rotate3d(1, 0, 0, 180deg);
 	transition-delay: 1.5s;
-  z-index: 1;
+    position: absolute;
+    left: -420px;
+    top: 100px;
+    visibility: inherit;
+ 
 }
 #texas{
   position: relative;
@@ -83,13 +129,37 @@ div#texas:active img#top {
 div#texas img#gobig {
 	transform-origin: top center;
 	transition-delay: 0s;
-
+    z-index: 1;
 }
-div#texas:active img#gobig {
 
+div#texas img#right2 {
+	transform-origin: right top;
+	transition-delay: 2s;
+   position: absolute;
+    top: -18px;
+    left: -172px;
+    visibility: hidden;
+}
+div#texas:active img#right2 {
+	transform: rotate3d(0, 1, 0, 180deg);
+	transition-delay: 1s;
+    position: absolute;
+    top: -18px;
+    left: -172px;
+    visibility: inherit;
+}
 
+div#texas img#gb {
+	transform-origin: bottom center;
+    transition-delay: 0s;
+    
+}
+div#texas:active img#gb {
 	transform: rotate3d(1, 0, 0, 180deg);
-	transition-delay: 0s;
-  
-
+    transition-delay: 0s;
+    position: absolute;
+    top: 0px;
+    left: -50px;
 }
+
+

@@ -5,6 +5,15 @@ body {
   background-color: #1e366c;
 }
 
+.texas_center {
+	
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 #texas {
    position: absolute;
     margin: auto;
@@ -86,7 +95,7 @@ body {
 }
 
 #tour_btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   opacity: 1;
 }
 

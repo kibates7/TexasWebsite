@@ -3,6 +3,7 @@
 }
 
 a.previous, a.next{
+	position: relative;
 	width: 5%;
 	height: auto;
     background-color: #f1f1f1;

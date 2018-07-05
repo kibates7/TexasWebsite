@@ -2,10 +2,11 @@ body {
     background-color: black;
 }
 div#texas {
-	width: 25%;
+	width: 100%;
 	position: relative;
 	perspective: 1000px;
 	margin: 0 auto;
+    left: 50%;
 }
 div#texas img {
 	position: absolute;
@@ -18,16 +19,16 @@ div#texas img#upperRight {
 	transform-origin: top center;
 	transition-delay: 1s;
      position: absolute;
-    left: 75px;
-    top: 170px;
+     left: -4%;
+    top: 200px;
     visibility: hidden;
 }
 div#texas:active img#upperRight {
 	transform: rotate3d(1, 0, 0, 180deg);
 	transition-delay: 2s;
     position: absolute;
-    left: 75px;
-    top: 170px;
+    left: -2%;
+    top: 200px;
     visibility: inherit;
   
 }
@@ -86,8 +87,8 @@ div#texas img#farleft {
 	transform-origin: left top;
 	transition-delay: 3s;
   position: absolute;
-    top: -88px;
-    left: -388px;
+     top: 12px;
+    left: 28px;
     visibility: hidden;
 }
 div#texas:active img#farleft {
@@ -111,7 +112,7 @@ div#texas:active img#top {
 	transform: rotate3d(1, 0, 0, 180deg);
 	transition-delay: 1.5s;
     position: absolute;
-    left: -420px;
+    left: -560px;
     top: 100px;
     visibility: inherit;
  

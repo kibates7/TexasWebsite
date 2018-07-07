@@ -3,7 +3,7 @@
 	  <div class="modal-dialog">
 
 		<!-- Modal content-->
-	<div class="texas_center" style="border-radius: 20px; width:600px; height:auto;">
+	<div class="texas_center" style="border-radius: 20px; width:650px; height:auto;">
 		
 		<div>
 			<img style="width:100%; height:auto;" src="img/img2_1.png"/>
@@ -11,37 +11,45 @@
 		
 		<table style="background-color:white; text-align: center; width: 100%; border-radius: 0 0 20px 20px;">
 			<tr>
-				<td style="width: 50%;"><img style="width:auto; height:80px;" src="img/img2_3.png"/></td>
-				<td style="width: 50%;"><img style="width:auto;; height:80px;" src="img/img2_2.png"/></td>
+				<td style="width: 50%;"><img id="modal2-img1" style="width:auto; height:80px;" src="img/img2_3.png"/></td>
+				<td style="width: 50%;"><img id="modal2-img2" style="width:auto;; height:80px;" src="img/img2_2.png"/></td>
 			</tr>
 			<tr>
 				<td style="color:8489a9; background-color:#222338; width: 50%; padding: 10px; border-right: 10px solid white; border-radius: 0 15px 15px 0;">
-					<h3 style="color:white; font-size: 20px">Best State for Business</h3>
-					<h4 style="font-size: 15px;">Voted #1 by CEOs for 13 Consecutive Years</h4><span style="font-size: 12px">Chief Executive Magazine 2017</span>
+					<div id="modal-text1" class="slide-right" style="vertical-align: middle; margin-top: -10px;">
+						<h3 style="color:white; font-size: 20px">Best State for Business</h3>
+						<h4 style="font-size: 15px;">Voted #1 by CEOs for 13 Consecutive Years</h4><span style="font-size: 12px">Chief Executive Magazine 2017</span>
+					</div>
 				</td>
 				<td style="color:8489a9; background-color:#222338; width: 50%; padding: 10px; border-left: 10px solid white; border-radius: 15px 0 0 15px;">
-					<h3 style="color:white; font-size: 20px;">#1 for Job Creation</h3>
-					<h4 style="font-size: 15px;">By Foreign and Domestic Investment</h4><span style="font-size: 12px">IBM Global Location Trends Report 2017</span>
+					<div id="modal-text2" class="slide-left" style="vertical-align: middle; margin-top: -10px;">
+						<h3 style="color:white; font-size: 20px;">#1 for Job Creation</h3>
+						<h4 style="font-size: 15px;">By Foreign and Domestic Investment</h4><span style="font-size: 12px">IBM Global Location Trends Report 2017</span>
+					</div>
 				</td>
 			</tr>
 			<tr>
-				<td style="width: 50%;"><img style="width:auto; height:80px;" src="img/img2_4.png"/></td>
-				<td style="width: 50%;"><img style="width:auto; height:80px;" src="img/img2_5.png"/></td>
+				<td style="width: 50%;"><img id="modal2-img3" style="width:auto; height:80px;" src="img/img2_4.png"/></td>
+				<td style="width: 50%;"><img id="modal2-img4" style="width:auto; height:80px;" src="img/img2_5.png"/></td>
 				</tr>
 			<tr>
 				<td style="color:8489a9; background-color:#222338; width: 50%; padding: 10px; border-right: 10px solid white; border-radius: 0 15px 0 20px;">
-					<h3 style="color:white; font-size: 20px;">Governor's Cup Winner</h3>
-					<h4 style="font-size: 15px;">For the 6th Year in a Row</h4><span style="font-size: 12px">Site Selection Magazine 2017</span>
+					<div id="modal-text3" class="slide-right" style="vertical-align: middle; margin-top: -10px;">
+						<h3 style="color:white; font-size: 20px;">Governor's Cup Winner</h3>
+						<h4 style="font-size: 15px;">For the 6th Year in a Row</h4><span style="font-size: 12px">Site Selection Magazine 2017</span>
+					</div>
 				</td>
 				<td style="color:8489a9; background-color:#222338; width: 50%; padding: 10px; border-left: 10px solid white; border-radius: 15px 0 20px 0;">
-					<h3 style="color:white; font-size: 20px;">#1 Economic Climate</h3>
-					<h4 style="font-size: 15px;">Best States for Business 2017</h4><span style="font-size: 12px">Forbes</span>
+					<div id="modal-text4" class="slide-left" style="vertical-align: middle; margin-top: -10px;">
+						<h3 style="color:white; font-size: 20px;">#1 Economic Climate</h3>
+						<h4 style="font-size: 15px;">Best States for Business 2017</h4><span style="font-size: 12px">Forbes</span>
+					</div>
 				</td>
 			</tr>
 		</table>
 	</div>
 	
-			<div class="modal-footer">
+			<div style="border-top: none;" class="modal-footer">
 				<button type="button" class="btn btn-default btn-prev">Prev</button>
 				<button type="button" class="btn btn-default btn-next">Next</button>
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -49,3 +57,19 @@
 		
 	  </div>
 	</div>
+	
+	<script>
+		$("#tour_btn2").click(function() {
+			$("#modal2-img1").css('opacity', '0');
+			$("#modal2-img1").delay(2000).fadeTo(600,1);
+			$("#modal2-img2").css('opacity', '0');
+			$("#modal2-img2").delay(2500).fadeTo(600,1);
+			$("#modal2-img3").css('opacity', '0');
+			$("#modal2-img3").delay(3000).fadeTo(600,1);
+			$("#modal2-img4").css('opacity', '0');
+			$("#modal2-img4").delay(3500).fadeTo(600,1);
+			
+			//$("#modal-text1").hide();
+		});
+	</script>
+	

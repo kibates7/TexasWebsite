@@ -10,7 +10,7 @@
 			<table style="width:auto; height:auto;">
 			  <tr>
 				<td>
-				  <img style="width:160px; height:auto;" src="img/img1_1.png"/>
+				  <img class="imageRotateHorizontal" style="width:160px; height:auto;" src="img/img1_1.png"/>
 				</td>
 				<td><div>
 				  <img style="width:100%; height:auto;" src="img/img1_2.png"/>
@@ -20,7 +20,7 @@
 			  </tr>
 			</table>
 			
-			<hr style=" width: 100%; border-top: dotted 20px;" /> 
+			<hr class="word" style=" width: 100%; border-top: dotted 20px;" /> 
 			
 				<h3 style="text-transform: uppercase; font-size: 16px;">But our size isn't the only reason global companies-including 
 					<span style="font-weight: bold; color:#ab3033;">50 fortune 500 companies</span> 
@@ -38,7 +38,7 @@
 		  </div>
 		</div>
 		
-		 <div class="modal-footer">
+		 <div style="border-top: none;" class="modal-footer">
           <button type="button" class="btn btn-default btn-prev">Prev</button>
           <button type="button" id="btnN" class="btn btn-default btn-next">Next</button>
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -46,3 +46,19 @@
 		  
 	</div>
   </div>
+  
+
+	<!-- <script>	
+		var $modal= $('.modal'),
+		modalObj = null;
+
+			$('#tour_btn').on('click', function (e) {
+				$("#myModal1").removeClass("fade");
+				$modal.css({top: e.clientY, left: e.clientX, transform: 'scale(0.1, 0.1)'});
+				modalObj = $modal.modal();
+				$modal.css({top: '', left: '', transform: ''});
+				
+				$("#myModal1").addClass("fade");
+			});
+	</script> -->
+	

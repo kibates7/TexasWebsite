@@ -6,6 +6,7 @@
 		<link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
 		
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/modal-style.css" rel="stylesheet">
 		
 		<script src="js/jquery.min.js"></script> 
 		<script src="js/bootstrap.min.js"></script>
@@ -14,15 +15,15 @@
 		 
 	<script>
 		$(document).ready(function() {
-			// $("#texas").hide();
+			 $("#texas").hide();
 			
-			// $("#tour_btn").hide();
-			// $("#tour_btn2").hide();
-			// $("#tour_btn3").hide();
-			// $("#tour_btn4").hide();
-			// $("#tour_btn5").hide();
-			// $("#tour_btn6").hide();
-			// $("#tour_btn7").hide(); 
+			 $("#tour_btn").hide();
+			 $("#tour_btn2").hide();
+			 $("#tour_btn3").hide();
+			 $("#tour_btn4").hide();
+			 $("#tour_btn5").hide();
+			 $("#tour_btn6").hide();
+			 $("#tour_btn7").hide(); 
 			
 			$("#modal1").load("slidePages/modal.html"); 
 			$("#modal2").load("slidePages/modal2.html");
@@ -32,47 +33,38 @@
 			$("#modal6").load("slidePages/modal6.html");
 			$("#modal7").load("slidePages/modal7.html");
 		
-			$("div[id^='myModal']").each(function(){
-	  
-	  var currentModal = $(this);
-	  
-	  //click next
-	  $("#btnN").click(function(){
-		$("#ntnN").hide();
-		});
-
-	});
+			
 		
-			// $("#start_btn").click(function() {
-				// //$("#gobig_center img.top").fadeOut(500);	
-				// $("#gobig_center img.top").toggleClass("transparent");	
-				// $("#gobig_center").delay(2000).fadeOut(500);
-				// $("#start_btn").delay(750).fadeOut(500);
-				// $("#tour_btn").delay(4000).fadeIn(2000);
-				// $("#tour_btn2").delay(4000).fadeIn(2000);
-				// $("#tour_btn3").delay(4000).fadeIn(2000);
-				// $("#tour_btn4").delay(4000).fadeIn(2000);
-				// $("#tour_btn5").delay(4000).fadeIn(2000);
-				// $("#tour_btn6").delay(4000).fadeIn(2000);
-				// $("#tour_btn7").delay(4000).fadeIn(2000);
-				// $("#texas").delay(2500).fadeIn(1000); */
-			// });
+			 $("#start_btn").click(function() {
+				 //$("#gobig_center img.top").fadeOut(500);	
+				 $("#gobig_center img.top").toggleClass("transparent");	
+				 $("#gobig_center").delay(2000).fadeOut(500);
+				 $("#start_btn").delay(750).fadeOut(500);
+				 $("#tour_btn").delay(4000).fadeIn(2000);
+				 $("#tour_btn2").delay(4000).fadeIn(2000);
+				 $("#tour_btn3").delay(4000).fadeIn(2000);
+				 $("#tour_btn4").delay(4000).fadeIn(2000);
+				 $("#tour_btn5").delay(4000).fadeIn(2000);
+				 $("#tour_btn6").delay(4000).fadeIn(2000);
+				 $("#tour_btn7").delay(4000).fadeIn(2000);
+				 $("#texas").delay(2500).fadeIn(1000); 
+			 });
 		});
 	</script>
 	
-	
-
-
 	</head>
 
 <body>
+
+<div style="width:auto; hieght:auto;">
 
   <img id="texas" src="img/gobigtexas2.png" width="60%" height="auto"/>
   
   <!-- <a href="slidepages/slide1.html" id="tour_btn" class="btn btn-danger">Click<br>Here</a>
   <a href="slidepages/slide2.html" id="tour_btn2" class="btn btn-danger">Click<br>Here</a>
 	--> 
-	
+	<!-- <button type="button" id="tour_btn" class="btn btn-danger">Open<br>Modal</button>
+   -->
   <button type="button" id="tour_btn" class="btn btn-danger" data-toggle="modal" data-target="#myModal1">Open<br>Modal</button>
   <button type="button" id="tour_btn2" class="btn btn-danger" data-toggle="modal" data-target="#myModal2">Open<br>Modal 2</button>
   <button type="button" id="tour_btn3" class="btn btn-danger" data-toggle="modal" data-target="#myModal3">Click<br>here 3</button>
@@ -94,10 +86,29 @@
 	<img class="top" src="img/gobigtexastitle.png" alt="Title" width="100%" height="100%"/>
   </div>
   
-  
   <button id="start_btn" type="button" class="btn btn-danger">Start</button>
   
+</div>
   
+		<script>
+			$("div[id^='myModal']").each(function(){
+  
+			  var currentModal = $(this);
+			  
+			  //click next
+			  currentModal.find('.btn-next').click(function(){
+				currentModal.modal('hide');
+				currentModal.closest("div[id^='myModal']").nextAll("div[id^='myModal']").first().modal('show'); 
+			  });
+			  
+			  //click prev
+			  currentModal.find('.btn-prev').click(function(){
+				currentModal.modal('hide');
+				currentModal.closest("div[id^='myModal']").prevAll("div[id^='myModal']").first().modal('show'); 
+			  });
 
+			});
+		</script>
+		
 </body>
 </html>

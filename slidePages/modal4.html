@@ -7,9 +7,10 @@
 		<div class="texas_center" style="background-image: url('img/img4.png'); background-size: 100%; background-repeat: no-repeat; border-radius: 20px 20px 20px 0; width:634px; height:768px;">
 	
 	  <div style="margin: auto; width: 80%; position: relative; top: 8%; left: 3%; text-align: center;">
-		<h1 style="text-transform: uppercase; color:#dc6859; font-weight: bold; font-size: 30px;">Vibrant Cultural landscape </h1>
 		
-		<h3 style="font-size: 16px; text-align: right;">"Night and day." That's how one CEO described the difference <br>
+		<h1 class="slide-right2" style="text-transform: uppercase; color:#dc6859; font-weight: bold; font-size: 30px;">Vibrant Cultural landscape </h1>
+		
+		<h3 class="slide-right2" style="animation-delay: 0.8s; font-size: 16px; text-align: right;">"Night and day." That's how one CEO described the difference <br>
 		betoween Silicon Valley and his new Texas headquarters. In <br>
 		Texas, employeres and talent alike enjoy low taxes, <span style="color:#dc6859;">a low <br>
 		cost of housing and high quality education</span> coupled <br>
@@ -18,7 +19,11 @@
 		each city has something unique to offer.</h3>
 
 	  </div>
+	  
+	  <div id="modal4-bg" class="bubbles" style="margin: auto; width: 50%; height: 25%; position: relative; top: 10%; left: 20%; text-align: center;"></div>	
+	  
     </div>
+	
 	
 			<div style="border-top: none;" class="modal-footer">
 				<button type="button" class="btn btn-default btn-prev">Prev</button>
@@ -28,3 +33,48 @@
 		
 	  </div>
 	</div>
+	
+	<script>
+		jQuery(document).ready(function($){
+		 
+			// Define a blank array for the effect positions. 
+			// This will be populated based on width of the title.
+			var bArray = [];
+			// Define a size array, this will be used to vary bubble sizes
+			var sArray = [8,12,16,20];
+		 
+			// Push the header width values to bArray
+			for (var i = 0; i < 500; i++) {
+				bArray.push(i);
+			}
+			 
+			// Function to select random array element
+			// Used within the setInterval a few times
+			function randomValue(arr) {
+				return arr[Math.floor(Math.random() * arr.length)];
+			}
+		 
+			// setInterval function used to create new bubble every 350 milliseconds
+			setInterval(function(){
+				 
+				// Get a random size, defined as variable so it can be used for both width and height
+				var size = randomValue(sArray);
+				// New bubble appeneded to div with it's size and left position being set inline
+				// Left value is set through getting a random value from bArray
+				$('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
+				 
+				// Animate each bubble to the top (bottom 100%) and reduce opacity as it moves
+				// Callback function used to remove finsihed animations from the page
+				$('.individual-bubble').animate({
+					'bottom': '100%',
+					'opacity' : '-=0.7'
+				}, 3000, function(){
+					$(this).remove()
+				}
+				);
+		 
+		 
+			}, 350);
+		 
+		});
+	</script>

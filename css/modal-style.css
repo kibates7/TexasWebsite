@@ -312,6 +312,29 @@
   }
 }
 
+.bubbles {
+	/* display: inline-block; */
+	/* font-family: arial; */
+	position: relative;
+}
+
+.bubbles h1 {
+position: relative;
+	/* margin: 1em 0 0; */
+	/* font-family: 'Luckiest Guy', cursive; */
+	color: red;
+	/* z-index: 2; */
+}
+
+.individual-bubble {
+	position: absolute;
+	border-radius: 100%;
+	bottom: 10px;
+	background-color: #1e366c;
+	/* z-index: 1; */
+}
+
+
 
 .rainbow {
     /* font-family: 'Bowlby One SC', cursive;
@@ -349,6 +372,30 @@
 
 @keyframes Always {
     100% { transform: scale(1.1);}
+}
+
+
+
+.slide-top {
+  
+  -moz-animation: slide-top 2s forwards;
+  -ms-animation: slide-top 2s forwards;    
+  -webkit-animation: slide-top 2s forwards;
+  animation: slide-top 2s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+@keyframes slide-top {
+  from {
+    opacity: 0;
+
+  }
+
+  to {
+    opacity: 1;
+
+  }
 }
 
 
@@ -422,29 +469,6 @@
   to {
 	opacity: 1;
   }
-}
-
-
-.bubbles {
-	/* display: inline-block; */
-	/* font-family: arial; */
-	position: relative;
-}
-
-.bubbles h1 {
-position: relative;
-	/* margin: 1em 0 0; */
-	/* font-family: 'Luckiest Guy', cursive; */
-	color: red;
-	/* z-index: 2; */
-}
-
-.individual-bubble {
-	position: absolute;
-	border-radius: 100%;
-	bottom: 10px;
-	background-color: #1e366c;
-	/* z-index: 1; */
 }
 
 

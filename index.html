@@ -7,6 +7,7 @@
 		
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/modal-style.css" rel="stylesheet">
+		<link href="css/style_unfold.css" rel="stylesheet" media="screen">
 		
 		<script src="js/jquery.min.js"></script> 
 		<script src="js/bootstrap.min.js"></script>
@@ -16,6 +17,7 @@
 	<script>
 		$(document).ready(function() {
 			 $("#texas").hide();
+			 $("#texas-full").hide();
 			
 			 $("#tour_btn").hide();
 			 $("#tour_btn2").hide();
@@ -23,7 +25,7 @@
 			 $("#tour_btn4").hide();
 			 $("#tour_btn5").hide();
 			 $("#tour_btn6").hide();
-			 $("#tour_btn7").hide(); 
+			 $("#tour_btn7").hide();  
 			
 			$("#modal1").load("slidePages/modal.html"); 
 			$("#modal2").load("slidePages/modal2.html");
@@ -35,20 +37,23 @@
 		
 			
 		
-			 $("#start_btn").click(function() {
+			  $("#start_btn").click(function() {
 				 //$("#gobig_center img.top").fadeOut(500);	
 				 $("#gobig_center img.top").toggleClass("transparent");	
 				 $("#gobig_center").delay(2000).fadeOut(500);
 				 $("#start_btn").delay(750).fadeOut(500);
-				 $("#tour_btn").delay(4000).fadeIn(2000);
-				 $("#tour_btn2").delay(4000).fadeIn(2000);
-				 $("#tour_btn3").delay(4000).fadeIn(2000);
-				 $("#tour_btn4").delay(4000).fadeIn(2000);
-				 $("#tour_btn5").delay(4000).fadeIn(2000);
-				 $("#tour_btn6").delay(4000).fadeIn(2000);
-				 $("#tour_btn7").delay(4000).fadeIn(2000);
-				 $("#texas").delay(2500).fadeIn(1000); 
-			 }); 
+				 $("#tour_btn").delay(5500).fadeIn(2000);
+				 $("#tour_btn2").delay(5500).fadeIn(2000);
+				 $("#tour_btn3").delay(5500).fadeIn(2000);
+				 $("#tour_btn4").delay(5500).fadeIn(2000);
+				 $("#tour_btn5").delay(5500).fadeIn(2000);
+				 $("#tour_btn6").delay(5500).fadeIn(2000);
+				 $("#tour_btn7").delay(5500).fadeIn(2000);
+				 $("#texas").delay(2500).fadeIn(300); 
+				 $("#texas").delay(2700).fadeOut(300);
+				 $("#texas-full").delay(5000).fadeIn(1000); 
+				 // $("#texas-full").delay(2500).fadeIn(1000); 
+			 });  
 		});
 	</script>
 	
@@ -58,7 +63,20 @@
 
 <div style="width:auto; hieght:auto;">
 
-  <img id="texas" src="img/texas-main.png" width="45%" height="auto"/>
+  <img id="texas-full" src="img/texas-main.png" width="45%" height="auto"/>
+  
+  <div id="texas" style="width: 45%; height: auto;">
+	<img style="width: 23.78%; height: auto; border-width: 0px;" id="top-left" alt=" " src="img/img/slice_0_1_2.png"/>
+	<img style="width: 26.42%; height: auto; border-width: 0px;" id="top" alt=" " src="img/img/slice_0_2_2.png"/>
+	<img style="width: 22.59%; height: auto; border-width: 0px;" id="top-right" alt=" " src="img/img/slice_0_3_2.png"/>
+	
+	<img style="width: 27.20%; height: auto; border-width: 0px;" id="farleft" alt=" " src="img/img/slice_1_0_2.png"/>
+	<img style="width: 23.78%; height: auto; border-width: 0px;" id="left" alt=" " src="img/img/slice_1_1_2.png"/>
+	<img style="width: 26.42%; height: auto; border-width: 0px;" id="center" alt=" " src="img/img/slice_1_2.png"/>
+	<img style="width: 22.59%; height: auto; border-width: 0px;" id="right" alt=" " src="img/img/slice_1_3_2.png"/>
+	
+	<img style="width: 43.93%; height: auto; border-width: 0px;" id="bottom" alt=" " src="img/img/slice_2_2_2.png"/>
+  </div>
   
   <!-- <a href="slidepages/slide1.html" id="tour_btn" class="btn btn-danger">Click<br>Here</a>
   <a href="slidepages/slide2.html" id="tour_btn2" class="btn btn-danger">Click<br>Here</a>

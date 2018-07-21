@@ -1,11 +1,11 @@
 #texas {
-   position: absolute;
+    position: absolute;
     margin: auto;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-	z-index: -1;
+	z-index: 0;
 }
 
 
@@ -25,7 +25,7 @@ div#texas img {
 div#texas img#center {
 	animation: center 1s linear forwards;
     position: absolute;
-	top: 13%;
+	top: 15.9%;
     /* visibility: hidden; 
 	z-index: -1; */
 }
@@ -37,8 +37,8 @@ div#texas img#left {
 	transform-origin: left;
 	animation: left 0.5s linear forwards;
 	animation-delay: 0.35s;
-	position: absolute;
-	top: 13%;
+	top: 16%;
+	left: -4%;
 	z-index: 1;
 	opacity: 0;
 }
@@ -51,9 +51,6 @@ div#texas img#left {
 	
 	100%{
 		transform: rotate3d(0, 1, 0, 180deg);
-		transition-delay: s;
-		left: -2.8%;
-		position: absolute;
 		opacity: 1;
 	}
 }
@@ -61,8 +58,8 @@ div#texas img#left {
 
 div#texas img#right {
 	transform-origin: top right;
-    position: absolute;
-	top: 13%;
+	top: 16%;
+	left: 4%;
 	animation: right 0.5s linear forwards;
 	animation-delay: 0.5s;
     visibility: hidden;
@@ -76,10 +73,7 @@ div#texas img#right {
 	
 	100%{
 	transform: rotate3d(0, 1, 0, 180deg);
-	transition-delay: 1s;
     visibility: inherit;
-    position: absolute;
-	left: 4%;
 	opacity: 1;
 	}
 }
@@ -89,8 +83,7 @@ div#texas img#right {
 div#texas img#top-left {
 	transform-origin: top left;
 	animation: top-left 1.5s linear forwards;
-    position: absolute;
-	top: 27%;
+	top: 38.1%;
 	left: -50.3%;
     visibility: hidden;
 }
@@ -101,7 +94,7 @@ div#texas img#top-left {
 		visibility: hidden;
 	}
 	
-	66.6%{
+	50%{
 		transform: rotate3d(0, 0, 0, 0deg);
 		visibility: hidden;
 		opacity: 0;
@@ -109,9 +102,6 @@ div#texas img#top-left {
 	
 	100%{
 		transform: rotate3d(1, 0, 0, 180deg);
-		transition-delay: 2s;
-		position: absolute;
-		top: 27%;
 		visibility: inherit;
 		opacity: 1;
 	}
@@ -121,30 +111,25 @@ div#texas img#top-left {
 div#texas img#top-right {
 	transform-origin: top right;
 	animation: top-right 1.5s linear forwards;
-    position: absolute;
+	top: 38.1%;
+	left: 4%;
     visibility: hidden;
 }
 
 @keyframes top-right {
-	50%{
+	0%{
 		visibility: hidden;
 	}
 	
-	66.6%{
+	50%{
 	transform: rotate3d(0, 1, 0, 180deg);
-	transition-delay: 2s;
     visibility: hidden;
-    position: absolute;
 	opacity: 0;
 	}
 	
 	100%{
 	transform: rotate3d(0, 0, 1, 180deg);
-	transition-delay: 1s;
     visibility: inherit;
-    position: absolute;
-	top: 26.3%;
-	left: 4%;
 	opacity: 1;
 	}
 }
@@ -153,8 +138,7 @@ div#texas img#top-right {
 div#texas img#top {
 	transform-origin: top center;
 	animation: top 1.5s linear forwards;
-    position: absolute;
-	top: 26.3%;
+	top: 38.1%;
     visibility: hidden;
 	z-index: 1;
 }
@@ -162,19 +146,18 @@ div#texas img#top {
 @keyframes top {
 	0%{
 		visibility: hidden;
-		z-index: 1;
 	}
-	66.6%{
+	50%{
 		transform: rotate3d(0, 0, 0, 0deg);
 		visibility: hidden;
-		z-index: 1;
+		opacity: 0;
+	}
+	75%{
 		opacity: 0;
 	}
 	
 	100%{
 		transform: rotate3d(1, 0, 0, 180deg);
-		transition-delay: 2s;
-		top: 26.3%;
 		visibility: inherit;
 		opacity: 1;
 	}
@@ -184,8 +167,8 @@ div#texas img#top {
 div#texas img#farleft {
 	transform-origin: left top;
 	animation: far-left 1.75s linear forwards;
-	position: absolute;
-	top: 13%;
+	top: 11%;
+	left: -46.4%;
     visibility: hidden;
 }
 
@@ -194,7 +177,7 @@ div#texas img#farleft {
 		visibility: hidden;
 	}
 	
-	75%{
+	66.6%{
 		transform: rotate3d(0, 0, 0, 0deg);
 		visibility: hidden;
 		opacity: 0;
@@ -202,10 +185,7 @@ div#texas img#farleft {
 	
 	100%{
 		transform: rotate3d(0, 1, 0, -180deg);
-		transition-delay: 2s;
-		left: -46.8%;
 		visibility: inherit;
-		position: absolute;
 		opacity: 1;
 	}
 }
@@ -215,7 +195,8 @@ div#texas img#bottom {
 	transform-origin: center bottom;
 	animation: bottom 2s linear forwards;
     visibility: hidden;
-	top: 13.8%;
+	top: 9.4%;
+	left: 4.2%;
 }
 
 @keyframes bottom {
@@ -223,7 +204,7 @@ div#texas img#bottom {
 		visibility: hidden;
 	}
 	
-	75%{
+	66.6%{
 		transform: rotate3d(0, 0, 0, 0deg);
 		visibility: hidden;
 		opacity: 0;
@@ -231,11 +212,7 @@ div#texas img#bottom {
 	
 	100%{
 		transform: rotate3d(1, 0, 0, 180deg);
-		transition-delay: 2s;
-		top: 13.8%;
-		left: 6%;
 		visibility: inherit;
-		position: absolute;
 		opacity: 1;
 	}
 }

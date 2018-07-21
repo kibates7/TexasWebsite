@@ -8,6 +8,7 @@
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/modal-style.css" rel="stylesheet">
 		<link href="css/style_unfold.css" rel="stylesheet" media="screen">
+		<link href="css/style-grow.css" rel="stylesheet" media="screen">
 		
 		<script src="js/jquery.min.js"></script> 
 		<script src="js/bootstrap.min.js"></script>
@@ -18,6 +19,7 @@
 		$(document).ready(function() {
 			 $("#texas").hide();
 			 $("#texas-full").hide();
+			 $("#texas-grow").hide();
 			
 			 $("#tour_btn").hide();
 			 $("#tour_btn2").hide();
@@ -39,21 +41,43 @@
 		
 			  $("#start_btn").click(function() {
 				 //$("#gobig_center img.top").fadeOut(500);	
-				 $("#gobig_center img.top").toggleClass("transparent");	
+				 //$("#gobig_center img.top").toggleClass("transparent");	
 				 $("#gobig_center").delay(2000).fadeOut(500);
 				 $("#start_btn").delay(750).fadeOut(500);
-				 $("#tour_btn").delay(5500).fadeIn(2000);
-				 $("#tour_btn2").delay(5500).fadeIn(2000);
-				 $("#tour_btn3").delay(5500).fadeIn(2000);
-				 $("#tour_btn4").delay(5500).fadeIn(2000);
-				 $("#tour_btn5").delay(5500).fadeIn(2000);
-				 $("#tour_btn6").delay(5500).fadeIn(2000);
-				 $("#tour_btn7").delay(5500).fadeIn(2000);
+				/* $("#tour_btn").delay(5500).fadeIn(100);
+				 $("#tour_btn2").delay(5500).fadeIn(100);
+				 $("#tour_btn3").delay(5500).fadeIn(100);
+				 $("#tour_btn4").delay(5500).fadeIn(100);
+				 $("#tour_btn5").delay(5500).fadeIn(100);
+				 $("#tour_btn6").delay(5500).fadeIn(100);
+				 $("#tour_btn7").delay(5500).fadeIn(100); */
 				 $("#texas").delay(2500).fadeIn(300); 
 				 $("#texas").delay(2700).fadeOut(300);
-				 $("#texas-full").delay(5000).fadeIn(1000); 
-				 // $("#texas-full").delay(2500).fadeIn(1000); 
+				 $("#texas-grow").delay(4500).fadeIn(100); 
+				 $("#texas-full").delay(4700).fadeIn(100); 
 			 });  
+			 
+			 $("#bottom-grow").hover(function(){
+				//$("#texas-full").fadeIn(500); 
+				$('#topleft-grow').animate({'opacity':'0'}, 100);
+				$('#top-grow').animate({'opacity':'0'}, 100);
+				$('#topright-grow').animate({'opacity':'0'}, 100);
+				$('#farleft-grow').animate({'opacity':'0'}, 100);
+				$('#left-grow').animate({'opacity':'0'}, 100);
+				$('#center-grow').animate({'opacity':'0'}, 100);
+				$('#right-grow').animate({'opacity':'0'}, 100);
+				//$('#bottom-grow').animate({'opacity':'0'}, 100);
+			},function(){
+				//$('#texas-full').hide();
+				$('#topleft-grow').animate({'opacity':'1'}, 100);
+				$('#top-grow').animate({'opacity':'1'}, 100);
+				$('#topright-grow').animate({'opacity':'1'}, 100);
+				$('#farleft-grow').animate({'opacity':'1'}, 100);
+				$('#left-grow').animate({'opacity':'1'}, 100);
+				$('#center-grow').animate({'opacity':'1'}, 100);
+				$('#right-grow').animate({'opacity':'1'}, 100);
+				//$('#bottom-grow').animate({'opacity':'1'}, 100);
+			});
 		});
 	</script>
 	
@@ -63,20 +87,37 @@
 
 <div style="width:auto; hieght:auto;">
 
-  <img id="texas-full" src="img/texas-main.png" width="45%" height="auto"/>
+  <img id="texas-full" src="img/texas-main_black.png" width="45%" height="auto"/>
   
   <div id="texas" style="width: 45%; height: auto;">
-	<img style="width: 23.78%; height: auto; border-width: 0px;" id="top-left" alt=" " src="img/img/slice_0_1_2.png"/>
-	<img style="width: 26.42%; height: auto; border-width: 0px;" id="top" alt=" " src="img/img/slice_0_2_2.png"/>
-	<img style="width: 22.59%; height: auto; border-width: 0px;" id="top-right" alt=" " src="img/img/slice_0_3_2.png"/>
+	<img style="width: 23.21%; height: auto; border-width: 0px;" id="top-left" alt=" " src="img/img/slice_0_1_2.png"/>
+	<img style="width: 26.73%; height: auto; border-width: 0px;" id="top" alt=" " src="img/img/slice_0_2_2.png"/>
+	<img style="width: 22.64%; height: auto; border-width: 0px;" id="top-right" alt=" " src="img/img/slice_0_3_2.png"/>
 	
-	<img style="width: 27.20%; height: auto; border-width: 0px;" id="farleft" alt=" " src="img/img/slice_1_0_2.png"/>
-	<img style="width: 23.78%; height: auto; border-width: 0px;" id="left" alt=" " src="img/img/slice_1_1_2.png"/>
-	<img style="width: 26.42%; height: auto; border-width: 0px;" id="center" alt=" " src="img/img/slice_1_2.png"/>
-	<img style="width: 22.59%; height: auto; border-width: 0px;" id="right" alt=" " src="img/img/slice_1_3_2.png"/>
+	<img style="width: auto; height: 28%; border-width: 0px;" id="farleft" alt=" " src="img/img/slice_1_0_2.png"/>
+	<img style="width: 23.21%; height: auto; border-width: 0px;" id="left" alt=" " src="img/img/slice_1_1_2.png"/>
+	<img style="width: 26.73%; height: auto; border-width: 0px;" id="center" alt=" " src="img/img/slice_1_2.png"/>
+	<img style="width: 22.64%; height: auto; border-width: 0px;" id="right" alt=" " src="img/img/slice_1_3_2.png"/>
 	
-	<img style="width: 43.93%; height: auto; border-width: 0px;" id="bottom" alt=" " src="img/img/slice_2_2_2.png"/>
+	<img style="width: 41.55%; height: auto; border-width: 0px;" id="bottom" alt=" " src="img/img/slice_2_2_2.png"/>
   </div>
+  
+  <div id="texas-grow" style="width: 45%; height: auto;">
+	
+	<span data-toggle="modal" data-target="#myModal1"><img style="width: 23.26%; height: auto; border-width: 0px;" class="tx-grow" id="topleft-grow" alt=" " src="img/grow/slice_0_1.png"/></span>
+	<span data-toggle="modal" data-target="#myModal2"><img style="width: 27.09%; height: auto; border-width: 0px;" class="tx-grow" id="top-grow" alt=" " src="img/grow/slice_0_2.png"/></span>
+	<span data-toggle="modal" data-target="#myModal3"><img style="width: 22.22%; height: 44.87%; border-width: 0px;" class="tx-grow" id="topright-grow" alt=" " src="img/grow/slice_0_3.png"/></span>
+	
+	<span data-toggle="modal" data-target="#myModal4"><img style="width: 27.40%; height: auto; border-width: 0px;" class="tx-grow" id="farleft-grow" alt=" " src="img/grow/slice_1_0.png"/></span>
+	<span data-toggle="modal" data-target="#myModal5"><img style="width: 23.26%; height: auto; border-width: 0px;" class="tx-grow"id="left-grow" alt=" " src="img/grow/slice_1_1.png"/></span>
+	<img style="width: 27.09%; height: auto; border-width: 0px;" id="center-grow" alt=" " src="img/grow/slice_1_2_3.png"/>
+	<span data-toggle="modal" data-target="#myModal6"><img style="width: 22.22%; height: auto; border-width: 0px;" class="tx-grow" id="right-grow" alt=" " src="img/grow/slice_1_3.png"/></span>
+	
+	<span data-toggle="modal" data-target="#myModal7"><img style="width: 41.55%; height: auto; border-width: 0px;" class="tx-grow" id="bottom-grow" alt=" " src="img/grow/slice_2_2.png"/></span>
+
+	</div>
+  
+  
   
   <!-- <a href="slidepages/slide1.html" id="tour_btn" class="btn btn-danger">Click<br>Here</a>
   <a href="slidepages/slide2.html" id="tour_btn2" class="btn btn-danger">Click<br>Here</a>
@@ -99,9 +140,9 @@
   <div id="modal6" ></div>
   <div id="modal7" ></div>
   
-  <div id="gobig_center" style="background-color:black; border: 5px solid black; border-radius: 5px; width:20%; height:40%">
-	<img class="bottom" src="img/gobigtexas_blue.png" alt="Title" width="100%" height="100%"/>
-	<img class="top" src="img/gobigtexastitle.png" alt="Title" width="100%" height="100%"/>
+  <div id="gobig_center">
+	<!-- <img class="bottom" src="img/gobigtexas_blue.png" alt="Title" width="100%" height="100%"/>
+	 --><img class="top" src="img/gobigtexastitle.png" alt="Title" width="100%" height="100%"/>
   </div>
   
   <button id="start_btn" type="button" class="btn btn-danger">Start</button>

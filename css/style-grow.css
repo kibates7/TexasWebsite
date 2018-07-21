@@ -1,0 +1,90 @@
+#texas-grow{
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+
+.tx-grow {
+
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);   
+
+}
+
+.tx-grow:hover {
+    /* box-shadow: 0px 0px 10px #000000; */
+    z-index: 5;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+	
+	/* background-color: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.5); */
+}
+
+#topleft-grow{
+	position: relative;
+	top: 0;
+	left: 13.2%;
+}
+
+#top-grow{
+	position: relative;
+	top: -0.8%;
+	left: 12.6%;
+}
+
+#topright-grow{
+	position: relative;
+	top: 0.4%;
+	left: 11.9%;
+}
+
+#farleft-grow{
+	position: relative;
+	top: -3.1%;
+	left: -14.1%;
+}
+
+#left-grow{
+	position: relative;
+	top: -3.2%;
+	left: -14.8%;
+}
+
+#center-grow{
+	position: relative;
+	top: -3.2%;
+	left: -15.5%;
+}
+
+#right-grow{
+	position: relative;
+	top: -28.7%;
+	left: 63.7%;
+}
+
+#bottom-grow{
+	position: relative;
+	top: -3.5%;
+	left: 8.5%;
+}
+
+
+

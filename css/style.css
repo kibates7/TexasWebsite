@@ -20,6 +20,7 @@ body {
     /* top: -12.2%; */
 	top: 0;
     left: -12.7%;
+	/* left: 0; puts texas image in ceter of page */
     right: 0;
     bottom: 0;
 	z-index: 2;
@@ -58,11 +59,22 @@ body {
 	z-index: -2;
 }
 
-#gobig_center img{
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  -o-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
+.transparent{
+  animation: gobig 0.75s linear forwards;
+  animation-delay: 2s;
+}
+
+@keyframes gobig {
+	0%{
+		opacity: 1;
+		transform: scale(1);
+	}
+	
+	100%{
+		opacity: 0;
+		transform: scale(0.4);
+		top: 25%;
+	}
 }
 
 #gobig_center img.bottom{
@@ -73,10 +85,6 @@ body {
 	z-index:-1;
 }
 
-#gobig_center img.transparent{
-	opacity:0;
-	transform: scale(0.5);
-}
 
 #tour_btn:hover, #tour_btn2:hover, #tour_btn3:hover, #tour_btn4:hover,
   #tour_btn5:hover, #tour_btn6:hover, #tour_btn7:hover{

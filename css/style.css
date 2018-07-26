@@ -158,12 +158,72 @@ body {
 
 #start_btn {
   position:absolute; 
-  margin: 0 auto;
+  margin:auto;
   left: 48%;
-  right: 0;
   bottom:18%;
   border-radius: 50px;
   border: 1px dashed white;
   z-index: 2;
 }
+
+.btn-prev {
+	float: left;
+	top: 40%;
+	left: -40%;
+}
+
+.btn-next {
+	float: right;
+	top: 40%;
+	left: 130%;
+}
+
+.btn-prev, .btn-next {
+	background-color: transparent;
+    transition: all .1s;
+    border-radius: 50px;
+	border: 1px solid white;
+	color: white;
+	
+	position: absolute;
+	
+}
+
+.btn-prev:hover, .btn-next:hover {
+	background-color: #9f2b29;
+}
+
+
+.close, .close2 {
+  position: absolute;
+  top: 0%;
+  left: 130%;
+  width: 7%;
+  height: 7%;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  opacity: 0.4;
+}
+.close2 {
+  top: 5%;
+}
+
+.close:hover, .close2:hover {
+  color: white;
+  opacity: 1;
+}
+
+
+@-moz-document url-prefix() {
+    #dots {
+        margin-top: -5%;
+    }
+}
+
+
+
+
+
+
 

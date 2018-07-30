@@ -168,7 +168,7 @@ div#texas img#farleft {
 	transform-origin: left top;
 	animation: far-left 1.75s linear forwards;
 	top: 11%;
-	left: -46.4%;
+	left: -45.5%;
     visibility: hidden;
 }
 
@@ -214,6 +214,72 @@ div#texas img#bottom {
 		transform: rotate3d(1, 0, 0, 180deg);
 		visibility: inherit;
 		opacity: 1;
+	}
+}
+
+
+.unfold-grow {
+	-webkit-animation: ugrow 1s linear forwards;
+	-ms-animation: ugrow 1s linear forwards;
+    -moz-animation: ugrow 1s linear forwards;
+    animation: ugrow 1s linear forwards;
+    animation-delay: 2s;
+	
+}
+
+@keyframes ugrow {
+	0%{
+		-webkit-transform: scale(1.0);
+		-ms-transform: scale(1.0);   
+		-moz-transform: scale(1.0);
+		transform: scale(1.0);
+		z-index: 4;
+	}
+	50%{
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1); 
+		-moz-transform: scale(1.1);
+		transform: scale(1.1);
+		opacity: 1;
+	}
+	75%{
+		opacity: 1;
+	}
+	99%{
+		z-index: 4;
+	}
+	100%{
+		-webkit-transform: scale(0.95);
+		-ms-transform: scale(0.95);   
+		-moz-transform: scale(0.95);
+		transform: scale(0.95);
+		z-index: 0;
+		opacity: 0;
+	}
+}
+
+.unfold-grow2 {
+	-webkit-animation: ugrow2 0.5s linear forwards;
+	-ms-animation: ugrow2 0.5s linear forwards;
+    -moz-animation: ugrow2 0.5s linear forwards;
+    animation: ugrow2 0.5s linear forwards;
+    animation-delay: 2.5s;
+	
+}
+
+@keyframes ugrow2 {
+	0%{
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);   
+		-moz-transform: scale(1.1);
+		transform: scale(1.1);
+	}
+	
+	100%{
+		-webkit-transform: scale(1.0);
+		-ms-transform: scale(1.0);   
+		-moz-transform: scale(1.0);
+		transform: scale(1.0);
 	}
 }
 

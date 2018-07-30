@@ -1,7 +1,56 @@
-/* .modal {
-    -webkit-transition: all 0.75s ease;
-    transition: all 0.75s ease;
-} */
+#myModal1, #myModal2, #myModal3, #myModal4,
+#myModal5, #myModal6, #myModal7 {
+    overflow: hidden;
+}
+
+
+.btn-prev {
+	float: left;
+	top: 50%;
+	left: -40%;
+}
+
+.btn-next {
+	float: right;
+	top: 50%;
+	left: 130%;
+}
+
+.btn-prev, .btn-next {
+	background-color: transparent;
+    transition: all .1s;
+    border-radius: 50px;
+	border: 1px solid white;
+	color: white;
+	
+	position: absolute;
+	
+}
+
+.btn-prev:hover, .btn-next:hover {
+	background-color: #9f2b29;
+}
+
+
+.close, .close2 {
+  position: absolute;
+  top: 0%;
+  left: 130%;
+  width: 7%;
+  height: 7%;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  opacity: 0.4;
+}
+.close2 {
+  top: 5%;
+}
+
+.close:hover, .close2:hover {
+  color: white;
+  opacity: 1;
+}
 
 
 
@@ -10,7 +59,7 @@
     -moz-transform: scale(0.1);
     -ms-transform: scale(0.1);
     transform: scale(0.1);
-	transform-origin: 40% 5%;
+	transform-origin: 20% 5%;
     
     -webkit-transition: all 1.5s;
     -moz-transition: all 1.5s;
@@ -37,7 +86,7 @@
     -moz-transform: scale(0.1);
     -ms-transform: scale(0.1);
     transform: scale(0.1);
-	transform-origin: 70% 20%;
+	transform-origin: 50% 20%;
     
     -webkit-transition: all 1.5s;
     -moz-transition: all 1.5s;
@@ -64,7 +113,7 @@
     -moz-transform: scale(0.1);
     -ms-transform: scale(0.1);
     transform: scale(0.1);
-	transform-origin: 90% 20%;
+	transform-origin: 70% 20%;
     
     -webkit-transition: all 1.5s;
     -moz-transition: all 1.5s;
@@ -92,7 +141,7 @@
     -moz-transform: scale(0.1);
     -ms-transform: scale(0.1);
     transform: scale(0.1);
-	transform-origin: 10% 40%;
+	transform-origin: -10% 50%;
     
     -webkit-transition: all 1.5s;
     -moz-transition: all 1.5s;
@@ -120,7 +169,7 @@
     -moz-transform: scale(0.1);
     -ms-transform: scale(0.1);
     transform: scale(0.1);
-	transform-origin: 40% 30%;
+	transform-origin: 20% 40%;
     
     -webkit-transition: all 1.5s;
     -moz-transition: all 1.5s;
@@ -176,7 +225,7 @@
     -moz-transform: scale(0.1);
     -ms-transform: scale(0.1);
     transform: scale(0.1);
-	transform-origin: 70% 50%;
+	transform-origin: 50% 80%;
     
     -webkit-transition: all 1.5s;
     -moz-transition: all 1.5s;
@@ -439,8 +488,19 @@ position: relative;
 
     text-shadow: 0.5px -0.6vw #fff4;
     color: #fff;
+	background-clip: text;
+    text-fill-color: transparent;
+	-moz-background-clip: text;
+    -moz-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+	
+	-moz-animation: rainbow 10s linear infinite,
+    3s Always ease alternate infinite;			/* animation used from above css of modal 2*/
+    -ms-animation: rainbow 10s linear infinite,
+    3s Always ease alternate infinite;
+    -webkit-animation: rainbow 10s linear infinite,
+    3s Always ease alternate infinite;
     animation: rainbow 10s linear infinite,
     3s Always ease alternate infinite;
 }
@@ -487,7 +547,7 @@ position: relative;
 .modal6-text2:after,.modal6-text2:before { 
   position:absolute;
   content:"";
-  height:15%;
+  height:16%;
   width: 70%;
   background: white;
   animation: revealText 3s;
@@ -514,7 +574,7 @@ position: relative;
 .modal6-text3:after,.modal6-text3:before { 
   position:absolute;
   content:"";
-  height:8%;
+  height:9%;
   width: 66%;
   background: white;
   animation: revealText2 3s;
@@ -552,12 +612,15 @@ position: relative;
 
 
 .boat-ani {
-	width: 28%; 
+	width: 19%; 
 	height: auto; 
 	margin: auto; 
-	position: relative; 
-	top: 8%;
-	left: 46%;
+	position: absolute;
+	top: 69%;			/* use only for tuesday presentation */
+	left: 50%;
+	/* position: relative;
+	top: 9%;	
+	left: 31%; */
 	animation: boat 10s infinite ease-in-out alternate;
 }
 
@@ -569,7 +632,8 @@ position: relative;
   }
 
   to {
-	margin-left: -25%;
+	  margin-left: -23%;  /* use only for tuesday presentation */
+	/* margin-left: -16%; */
   }
 }
 

@@ -3,6 +3,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #1e366c;
+  overflow: hidden;
 }
 
 .texas_center {
@@ -19,7 +20,7 @@ body {
     margin: auto;
     /* top: -12.2%; */
 	top: 0;
-    left: -12.7%;
+    left: -12%;
 	/* left: 0; puts texas image in ceter of page */
     right: 0;
     bottom: 0;
@@ -50,10 +51,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-	background-color:black; 
-	border: 5px solid black; 
-	border-radius: 5px; 
+    bottom: 0;  
 	width:20%; 
 	height:40%;
 	z-index: -2;
@@ -166,60 +164,12 @@ body {
   z-index: 2;
 }
 
-.btn-prev {
-	float: left;
-	top: 40%;
-	left: -40%;
-}
 
-.btn-next {
-	float: right;
-	top: 40%;
-	left: 130%;
-}
-
-.btn-prev, .btn-next {
-	background-color: transparent;
-    transition: all .1s;
-    border-radius: 50px;
-	border: 1px solid white;
-	color: white;
-	
-	position: absolute;
-	
-}
-
-.btn-prev:hover, .btn-next:hover {
-	background-color: #9f2b29;
-}
-
-
-.close, .close2 {
-  position: absolute;
-  top: 0%;
-  left: 130%;
-  width: 7%;
-  height: 7%;
-  font-size: 32px;
-  color: white;
-  text-align: center;
-  opacity: 0.4;
-}
-.close2 {
-  top: 5%;
-}
-
-.close:hover, .close2:hover {
-  color: white;
-  opacity: 1;
-}
-
-
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
     #dots {
         margin-top: -5%;
     }
-}
+} */
 
 
 

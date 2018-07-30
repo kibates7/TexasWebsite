@@ -9,6 +9,8 @@
 				$('#center-grow').animate({'opacity':'0'}, 100);
 				$('#right-grow').animate({'opacity':'0'}, 100);
 				$('#bottom-grow').animate({'opacity':'0'}, 100);
+				
+				$("#texas-full").show();
 			},function(){
 				//$('#texas-full').hide();
 				//$('#topleft-grow').animate({'opacity':'1'}, 100);
@@ -32,6 +34,8 @@
 				$('#center-grow').animate({'opacity':'0'}, 100);
 				$('#right-grow').animate({'opacity':'0'}, 100);
 				$('#bottom-grow').animate({'opacity':'0'}, 100);
+				
+				$("#texas-full").show();
 			},function(){
 				//$('#texas-full').hide();
 				$('#topleft-grow').animate({'opacity':'1'}, 100);
@@ -55,6 +59,8 @@
 				$('#center-grow').animate({'opacity':'0'}, 100);
 				$('#right-grow').animate({'opacity':'0'}, 100);
 				$('#bottom-grow').animate({'opacity':'0'}, 100);
+				
+				$("#texas-full").show();
 			},function(){
 				//$('#texas-full').hide();
 				$('#topleft-grow').animate({'opacity':'1'}, 100);
@@ -78,6 +84,8 @@
 				$('#center-grow').animate({'opacity':'0'}, 100);
 				$('#right-grow').animate({'opacity':'0'}, 100);
 				$('#bottom-grow').animate({'opacity':'0'}, 100);
+				
+				$("#texas-full").show();
 			},function(){
 				//$('#texas-full').hide();
 				$('#topleft-grow').animate({'opacity':'1'}, 100);
@@ -101,6 +109,8 @@
 				$('#center-grow').animate({'opacity':'0'}, 100);
 				$('#right-grow').animate({'opacity':'0'}, 100);
 				$('#bottom-grow').animate({'opacity':'0'}, 100);
+				
+				$("#texas-full").show();
 			},function(){
 				//$('#texas-full').hide();
 				$('#topleft-grow').animate({'opacity':'1'}, 100);
@@ -124,6 +134,8 @@
 				$('#center-grow').animate({'opacity':'0'}, 100);
 				//$('#right-grow').animate({'opacity':'0'}, 100);
 				$('#bottom-grow').animate({'opacity':'0'}, 100);
+				
+				$("#texas-full").show();
 			},function(){
 				//$('#texas-full').hide();
 				$('#topleft-grow').animate({'opacity':'1'}, 100);
@@ -147,6 +159,8 @@
 				$('#center-grow').animate({'opacity':'0'}, 100);
 				$('#right-grow').animate({'opacity':'0'}, 100);
 				//$('#bottom-grow').animate({'opacity':'0'}, 100);
+				
+				$("#texas-full").show();
 			},function(){
 				//$('#texas-full').hide();
 				$('#topleft-grow').animate({'opacity':'1'}, 100);
@@ -158,5 +172,7 @@
 				$('#right-grow').animate({'opacity':'1'}, 100);
 				//$('#bottom-grow').animate({'opacity':'1'}, 100);
 			});
+			
+				//$("#texas-full").fadeOut();
 
 		

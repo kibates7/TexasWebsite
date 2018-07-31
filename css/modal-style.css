@@ -439,6 +439,17 @@
     animation-delay: 2s;
 }
 
+#modal4-bg4 {
+	margin: auto; 
+	width: 34%; 
+	height: 3.5%; 
+	position: relative; 
+	top: 15%; 
+	left: 19%; 
+	z-index: 5;
+}
+
+
 
 .bubbles {
 	/* display: inline-block; */

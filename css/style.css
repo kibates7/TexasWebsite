@@ -94,6 +94,7 @@ div.modal4txt:hover{
 }
 
 #gobig_center {
+	cursor: pointer;
     position: absolute;
     margin: auto;
     top: 0;
@@ -102,7 +103,7 @@ div.modal4txt:hover{
     bottom: 0;  
 	width:20%; 
 	height:40%;
-	z-index: -2;
+	/* z-index: -2; */
 }
 
 .transparent{
@@ -214,8 +215,8 @@ div.modal4txt:hover{
  
  
 #start-div {
-  width: 6%; 
-  height: 12%;
+  width: 5.5%; 
+  height: 11%;
   position:absolute; 
   margin:auto;
   left: 47%;
@@ -224,6 +225,7 @@ div.modal4txt:hover{
 }
 
 .btn-red {
+  font-size: 1.1vw;
   background: #072d74;
   /* background: #d9242e; */
   color: white;
@@ -234,6 +236,8 @@ div.modal4txt:hover{
   display: inline-block;
   height: 100%;
   width: 100%;
+  outline:none;
+
   transition: all .3s ease-in;
 }
 .btn-red:hover {
@@ -252,6 +256,22 @@ div.modal4txt:hover{
 background: #d9242e;
   /* background: #0ec518; */
   box-shadow: 0 -2px 0 3px #0b9512 
+}
+
+.border-fade {
+	text-align: center;
+	position:absolute; 
+	margin:auto;
+	left: 45.3%;
+	top:23%; 
+	width: auto; 
+	height: auto; 
+	font-size: 1vw;
+	color: white; 
+	background-color: black; 
+	box-shadow: 0 0 10px 10px black;
+	opacity: 0.6;
+	
 }
 
 

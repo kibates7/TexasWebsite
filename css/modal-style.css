@@ -647,7 +647,7 @@ position: relative;
 	/* position: relative;
 	top: 9%;	
 	left: 31%; */
-	animation: boat 30s infinite ease-in-out alternate;
+	animation: boat 8s infinite ease-out alternate;
 }
 
 

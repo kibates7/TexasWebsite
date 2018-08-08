@@ -51,26 +51,26 @@
 
 #topleft-grow{
 	position: relative;
-	top: 0;
-	left: 13.4%;
+	top: -0.2%;
+	left: 13.5%;
 }
 
 #top-grow{
 	position: relative;
-	top: -0.8%;
+	top: -0.6%;
 	left: 12.7%;
 }
 
 #topright-grow{
 	position: relative;
 	top: 0.4%;
-	left: 11.8%;
+	left: 12%;
 }
 
 #farleft-grow{
 	position: relative;
 	top: -3.1%;
-	left: -14.1%;
+	left: -14%;
 }
 
 #left-grow{
@@ -88,7 +88,7 @@
 #right-grow{
 	position: relative;
 	top: -28.5%;
-	left: 63.8%;
+	left: 63.9%;
 }
 
 #bottom-grow{

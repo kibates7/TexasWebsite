@@ -64,11 +64,11 @@ div.modal4txt:hover{
 }
 
 #texas-full {
-   position: absolute;
+    position: absolute;
     margin: auto;
     /* top: -12.2%; */
 	top: 0;
-    left: -12%;
+    left: 0;
 	/* left: 0; puts texas image in ceter of page */
     right: 0;
     bottom: 0;
@@ -101,8 +101,8 @@ div.modal4txt:hover{
     left: 0;
     right: 0;
     bottom: 0;  
-	width:20%; 
-	height:40%;
+	width:215px; 
+	height:205px;
 	/* z-index: -2; */
 }
 

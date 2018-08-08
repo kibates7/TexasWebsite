@@ -21,7 +21,7 @@
 		$(document).ready(function() {
 			 $("#texas").hide();
 			 $("#texas-full").hide();
-			// $("#texas-grow").hide();
+			 $("#texas-grow").hide();
 			
 			 $("#tour_btn").hide();
 			 $("#tour_btn2").hide();
@@ -41,22 +41,43 @@
 		
 			
 		
-			  $("#start_btn").click(function() {
+			  $("#start-div").click(function() {
 				 //$("#gobig_center img.top").fadeOut(500);	
 				 //$("#gobig_center img.top").toggleClass("transparent");	
 				 $("#gobig_center").addClass("transparent");
-				 $("#start_btn").delay(750).fadeOut(500);
+				 $("#start-div").delay(750).fadeOut(800);
 				/* $("#tour_btn").delay(5500).fadeIn(100);
 				 $("#tour_btn2").delay(5500).fadeIn(100);
 				 $("#tour_btn3").delay(5500).fadeIn(100);
 				 $("#tour_btn4").delay(5500).fadeIn(100);
 				 $("#tour_btn5").delay(5500).fadeIn(100);
 				 $("#tour_btn6").delay(5500).fadeIn(100);
-				 $("#tour_btn7").delay(5500).fadeIn(100); */
+				 $("#tour_btn7").delay(5500).fadeIn(100);  */
 				 $("#texas").delay(2500).fadeIn(300); 
+				 $("#texas").delay(2500).addClass("unfold-grow");
 				 $("#texas").delay(2700).fadeOut(300);
-				 $("#texas-grow").delay(4500).fadeIn(100); 
-				 $("#texas-full").delay(4700).fadeIn(100); 
+				 $("#texas-grow").delay(5200).fadeIn(100); 
+				// $("#texas-full").delay(5400).fadeIn(100); 
+			 });  
+			 
+			 $("#gobig_center").click(function() {
+				 //$("#gobig_center img.top").fadeOut(500);	
+				 //$("#gobig_center img.top").toggleClass("transparent");	
+				 $("#gobig_center").addClass("transparent");
+				 $(".border-fade").delay(100).fadeOut(200);
+				 $("#start-div").delay(750).fadeOut(800);
+				/* $("#tour_btn").delay(5500).fadeIn(100);
+				 $("#tour_btn2").delay(5500).fadeIn(100);
+				 $("#tour_btn3").delay(5500).fadeIn(100);
+				 $("#tour_btn4").delay(5500).fadeIn(100);
+				 $("#tour_btn5").delay(5500).fadeIn(100);
+				 $("#tour_btn6").delay(5500).fadeIn(100);
+				 $("#tour_btn7").delay(5500).fadeIn(100);  */
+				 $("#texas").delay(2500).fadeIn(300); 
+				 $("#texas").delay(2500).addClass("unfold-grow");
+				 $("#texas").delay(2700).fadeOut(300);
+				 $("#texas-grow").delay(5200).fadeIn(100); 
+				// $("#texas-full").delay(5400).fadeIn(100); 
 			 });  
 			 
 		});
@@ -66,74 +87,448 @@
 
 <body>
 
+
 <div style="width:auto; hieght:auto;">
-
-  <img id="texas-full" src="img/texas-main_black.png" width="44%" height="auto"/>
   
-  <div id="texas" style="width: 44%; height: auto;">
+  <div id="texas-full" style="width: 480px; height: 508px;">
+    <img src="img/texas-main_black2.png" style="width: 100%; height: 94.8%; position: relative; top: 0; top: 2.5%; left: -13.9%;"/>
+  </div>
+  
+  <div id="texas" style="width: 480px; height: 508px;">
 	
-	<img style="width: 23.21%; height: auto; border-width: 0px;" id="top-left" alt=" " src="img/img/slice_0_1_2.png"/>
-	<img style="width: 26.73%; height: auto; border-width: 0px;" id="top" alt=" " src="img/img/slice_0_2_2.png"/>
-	<img style="width: 22.64%; height: auto; border-width: 0px;" id="top-right" alt=" " src="img/img/slice_0_3_2.png"/>
+	<img style="width: 23.21%; height: auto; border-width: 0px;" id="top-left" alt=" " src="img/img/slice_0_1_3.png"/>
+	<img style="width: 26.73%; height: auto; border-width: 0px;" id="top" alt=" " src="img/img/slice_0_2_4.png"/>
+	<img style="width: 22.64%; height: auto; border-width: 0px;" id="top-right" alt=" " src="img/img/slice_0_3_3.png"/>
 	
-	<img style="width: auto; height: 28%; border-width: 0px;" id="farleft" alt=" " src="img/img/slice_1_0_2.png"/>
-	<img style="width: 23.21%; height: auto; border-width: 0px;" id="left" alt=" " src="img/img/slice_1_1_2.png"/>
-	<img style="width: 26.73%; height: auto; border-width: 0px;" id="center" alt=" " src="img/img/slice_1_2.png"/>
-	<img style="width: 22.64%; height: auto; border-width: 0px;" id="right" alt=" " src="img/img/slice_1_3_2.png"/>
+	<img style="width: auto; height: 28%; border-width: 0px;" id="farleft" alt=" " src="img/img/slice_1_0_3.png"/>
+	<img style="width: 23.21%; height: auto; border-width: 0px;" id="left" alt=" " src="img/img/slice_1_1_3.png"/>
+	<img style="width: 26.73%; height: auto; border-width: 0px;" id="center" alt=" " src="img/img/slice_1_3.png"/>
+	<img style="width: 22.64%; height: auto; border-width: 0px;" id="right" alt=" " src="img/img/slice_1_3_3.png"/>
 	
-	<img style="width: 41.55%; height: auto; border-width: 0px;" id="bottom" alt=" " src="img/img/slice_2_2_2.png"/>
+	<img style="width: 41.55%; height: auto; border-width: 0px;" id="bottom" alt=" " src="img/img/slice_2_2_3.png"/>
   
   </div>
   
-  <div id="texas-grow" style="width: 44%; height: auto;">
+  <div id="texas-grow" style="width: 480px; height: 508px;">
 	
-	<span data-toggle="modal" data-target="#myModal1"><img style="width: 23.26%; height: auto; border-width: 0px;" class="tx-grow" id="topleft-grow" alt=" " src="img/grow/slice_0_1.png"/></span>
-	<span data-toggle="modal" data-target="#myModal2"><img style="width: 27.09%; height: auto; border-width: 0px;" class="tx-grow" id="top-grow" alt=" " src="img/grow/slice_0_2.png"/></span>
-	<span data-toggle="modal" data-target="#myModal3"><img style="width: 22.22%; height: 44.87%; border-width: 0px;" class="tx-grow" id="topright-grow" alt=" " src="img/grow/slice_0_3.png"/></span>
+	<span data-toggle="modal" data-target="#myModal1"><img style="width: 23.26%; height: auto; border-width: 0px;" class="tx-grow" id="topleft-grow" alt=" " src="img/grow/slice_0_1-label4.png"/></span>
+	<span data-toggle="modal" data-target="#myModal2"><img style="width: 27.09%; height: auto; border-width: 0px;" class="tx-grow" id="top-grow" alt=" " src="img/grow/slice_0_2-label3.png"/></span>
+	<span data-toggle="modal" data-target="#myModal3"><img style="width: 22.22%; height: 44.87%; border-width: 0px;" class="tx-grow" id="topright-grow" alt=" " src="img/grow/slice_0_3-label4.png"/></span>
 	
-	<span data-toggle="modal" data-target="#myModal4"><img style="width: 27.40%; height: auto; border-width: 0px;" class="tx-grow" id="farleft-grow" alt=" " src="img/grow/slice_1_0.png"/></span>
-	<span data-toggle="modal" data-target="#myModal5"><img style="width: 23.26%; height: auto; border-width: 0px;" class="tx-grow"id="left-grow" alt=" " src="img/grow/slice_1_1.png"/></span>
-	<img style="width: 27.09%; height: auto; border-width: 0px;" id="center-grow" alt=" " src="img/grow/slice_1_2_3.png"/>
-	<span data-toggle="modal" data-target="#myModal6"><img style="width: 22.22%; height: auto; border-width: 0px;" class="tx-grow" id="right-grow" alt=" " src="img/grow/slice_1_3.png"/></span>
+	<span data-toggle="modal" data-target="#myModal4"><img style="width: 27.40%; height: auto; border-width: 0px;" class="tx-grow" id="farleft-grow" alt=" " src="img/grow/slice_1_0-label4.png"/></span>
+	<span data-toggle="modal" data-target="#myModal5"><img style="width: 23.26%; height: auto; border-width: 0px;" class="tx-grow"id="left-grow" alt=" " src="img/grow/slice_1_1-label4.png"/></span>
+	<img style="width: 27.09%; height: auto; border-width: 0px;" id="center-grow" class="tx-grow2" alt=" " src="img/grow/slice_1_2-label3.png"/>
+	<span data-toggle="modal" data-target="#myModal6"><img style="width: 22.22%; height: auto; border-width: 0px;" class="tx-grow" id="right-grow" alt=" " src="img/grow/slice_1_3-label4.png"/></span>
 	
-	<span data-toggle="modal" data-target="#myModal7"><img style="width: 41.55%; height: auto; border-width: 0px;" class="tx-grow" id="bottom-grow" alt=" " src="img/grow/slice_2_2.png"/></span>
+	<span data-toggle="modal" data-target="#myModal7"><img style="width: 41.55%; height: auto; border-width: 0px;" class="tx-grow" id="bottom-grow" alt=" " src="img/grow/slice_2_2-label4.png"/></span>
 
   </div>
   
+  <!-- <div style="margin: auto; position: relative; top: 0; left: 0; right: 0; bottom: 0; width: 491.3px; height: 100%; z-index: 11; background-color: red;">
+																					  width: 480.1px; height: 508.4px;
+  </div> -->
+  
+ 
   
   
-  <!-- <a href="slidepages/slide1.html" id="tour_btn" class="btn btn-danger">Click<br>Here</a>
-  <a href="slidepages/slide2.html" id="tour_btn2" class="btn btn-danger">Click<br>Here</a>
-	--> 
-  <!-- <button type="button" id="tour_btn" class="btn btn-danger">Open<br>Modal</button>-->
-  <!-- <button type="button" id="tour_btn" class="btn btn-danger" data-toggle="modal" data-target="#myModal1">Open<br>Modal</button>
-  <button type="button" id="tour_btn2" class="btn btn-danger" data-toggle="modal" data-target="#myModal2">Open<br>Modal 2</button>
-  <button type="button" id="tour_btn3" class="btn btn-danger" data-toggle="modal" data-target="#myModal3">Click<br>here 3</button>
-  <button type="button" id="tour_btn4" class="btn btn-danger" data-toggle="modal" data-target="#myModal4">Open<br>Modal 4</button>
-  <button type="button" id="tour_btn5" class="btn btn-danger" data-toggle="modal" data-target="#myModal5">Open<br>Modal 5</button>
-  <button type="button" id="tour_btn6" class="btn btn-danger" data-toggle="modal" data-target="#myModal6">Open<br>Modal 6</button>
-  <button type="button" id="tour_btn7" class="btn btn-danger" data-toggle="modal" data-target="#myModal7">Open<br>Modal 7</button>
-   -->
-   
-  <div id="modal1" ></div>
-  <div id="modal2" ></div>
-  <div id="modal3" ></div>
-  <div id="modal4" ></div>
-  <div id="modal5" ></div>
-  <div id="modal6" ></div>
-  <div id="modal7" ></div>
+    <!-- Modal1 -->
+	<div id="myModal1" class="modal fade" role="dialog" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="texas_center" style="background-color:white; padding: 10px 10px 0 10px; border-radius: 20px; width:460px; height:auto;">
+		  <div style="padding: 30px 30px 10px 30px;">
+		  
+			<table style="width:auto; height:auto; margin-top: -7%">
+			  <tr>
+				<td>
+				  <img class="imageRotateHorizontal" style="width:100%; height:auto;" src="img/img1_1.png"/>
+				</td>
+				<td><div>
+				  <img style="width:100%; height:auto;" src="img/img1_2.png"/>
+					 <a class="tx-info2" style="color: #d9242e;" href="http://bxjmag.com/texas-10th-largest-economy-in-the-world/" target="_blank">
+					  <!--  <div class="modal1txt"> -->
+					    <h1 style="text-transform: uppercase; color:#d9242e; font-size: 20px; font-weight: bold;">If Texas were a Nation</h1>
+					  <!-- </div> -->
+					  </a>
+						<h2 style="color: black; text-transform: uppercase; font-size: 16px;">it would be the 10th largest economy in the world</h2>
+				</div></td>
+			  </tr>
+			</table>
+			
+			<hr class="word" style=" width: 100%; border-top: dotted 17px; margin-top: 0;" /> 
+			
+				<h3 style="text-transform: uppercase; font-size: 14px;">But our size isn't the only reason global companies-including 
+					<a href="https://businessintexas.com/sites/default/files/05/04/16/texasfortune500.pdf" target="_blank">
+					<span style="font-weight: bold; color:#d9242e;">50 fortune 500 companies</span></a>
+					and <a href="https://www.sba.gov/sites/default/files/advocacy/2018-Small-Business-Profiles-TX.pdf" target="_blank">
+					<span style="font-weight: bold; color:#d9242e;">2.5 million small businesses</span></a>-choose to 
+					<a href="https://businessintexas.com/" target="_blank"><span style="font-weight: bold; color:#d9242e;">go big in texas</span></a>. The lone star state offers 
+					a <a href="https://businessintexas.com/why-texas/skilled-workforce" target="_blank">
+					<span style="font-weight: bold; color:#d9242e;">skilled workforce of 13+ million people,</span></a>
+					a business-friendly tax climate and one of the 
+					nation's top deal-closing incentive programs. </h3>
+					
+				<h3 style="text-transform: uppercase; font-size: 14px;"> Add that to our <a href="https://businessintexas.com/why-texas/infrastructure" target="_blank">
+					<span style="font-weight: bold; color:#d9242e;">
+					central north american location, world-class infrastructure</span></a> and <a href="https://businessintexas.com/why-texas/quality-life" target="_blank">
+					<span style="font-weight: bold; color:#d9242e;">
+					high quality of life</span></a> and it's no wonder boeing, charles schwab, exxonmobil, hulu, kubota, sabic, 
+					toyota and many more recently chose to expand in texas. </h3>
+		  
+		  </div>
+		</div>
+		
+		<!-- <button type="button" class="btn-lg btn-prev">&#8249</button> -->
+		<button type="button" class="btn-lg btn-next">&#8250</button>
+		<div class="close" data-dismiss="modal">&#10006;</div>
+		
+	</div>
+  </div>
+  
+  
+    <!-- Modal2 -->
+	<div id="myModal2" class="modal fade" role="dialog" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+
+		<!-- Modal content-->
+	<div class="texas_center" style="border-radius: 0 0 10px 10px; width:460px; height:auto; margin-top: -2%;">
+		
+		<div>
+			<img style="width:100%; height:35%;" src="img/img2_1.png"/>
+		</div>
+		
+		<table style="background-color:white; text-align: center; width: 100%; border-radius: 0 0 20px 20px;">
+			<tr>
+				<td style="width: 50%;"><img id="modal2-img1" class="img-fade" style="animation-delay: .3s; width:auto; height:35%;" src="img/img2_3.png"/></td>
+				<td style="width: 50%;"><img id="modal2-img2" class="img-fade" style="animation-delay: .7s; width:auto;; height:35%;" src="img/img2_2.png"/></td>
+			</tr>
+			<tr>
+				<td style="color:8489a9; background-color:#222338; width: 50%; padding: 10px; border-right: 10px solid white;"> <!-- border-radius: 0 15px 15px 0;"> -->
+					<div id="modal-text1" class="slide-right" style="vertical-align: middle; margin-top: -10%;">
+						<h3 style="color:white; font-size: 16px">Best State for Business</h3>
+						<h4 style="font-size: 12px;">Voted #1 by CEOs for 13 Years</h4><span style="font-size: 11px">Chief Executive Magazine 2017</span>
+					</div>
+				</td>
+				<td style="color:8489a9; background-color:#222338; width: 50%; padding: 10px; border-left: 10px solid white;"> <!-- border-radius: 15px 0 0 15px;"> -->
+					<div id="modal-text2" class="slide-left" style="vertical-align: middle; margin-top: -10%;">
+						<h3 style="color:white; font-size: 16px;">#1 for Job Creation</h3>
+						<h4 style="font-size: 12px;">By Foreign and Domestic Investment</h4><span style="font-size: 11px">IBM Global Location Trends Report 2017</span>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td style="width: 50%;"><img id="modal2-img3" class="img-fade" style="animation-delay: .6s; width:auto; height:35%;" src="img/img2_4.png"/></td>
+				<td style="width: 50%;"><img id="modal2-img4" class="img-fade" style="animation-delay: .9s; width:auto; height:35%;" src="img/img2_5.png"/></td>
+				</tr>
+			<tr>
+				<td style="color:8489a9; background-color:#222338; width: 50%; padding: 10px; border-right: 10px solid white; border-radius: 0 0 0 20px;">
+					<div id="modal-text3" class="slide-right" style="vertical-align: middle; margin-top: -10%;">
+						<h3 style="color:white; font-size: 16px;">Governor's Cup Winner</h3>
+						<h4 style="font-size: 12px;">For the 6th Year in a Row</h4><span style="font-size: 11px">Site Selection Magazine 2017</span>
+					</div>
+				</td>
+				<td style="color:8489a9; background-color:#222338; width: 50%; padding: 10px; border-left: 10px solid white; border-radius: 0 0 20px 0;">
+					<div id="modal-text4" class="slide-left" style="vertical-align: middle; margin-top: -10%;">
+						<h3 style="color:white; font-size: 16px;">#1 Economic Climate</h3>
+						<h4 style="font-size: 12px;">Best States for Business 2017</h4><span style="font-size: 11px">Forbes</span>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+			<button style="top: 51%;" type="button" class="btn-lg btn-prev">&#8249</button>
+			<button style="top: 51%;" type="button" class="btn-lg btn-next">&#8250</button>
+			<div class="close" style="top: 10%;" data-dismiss="modal">&#10006;</div>
+		
+	  </div>
+	</div>
+	
+	
+    <!-- Modal3 -->
+	<div id="myModal3" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+		<!-- Modal content-->
+		  <div class="texas_center" style="background-image: url('img/img3_12.png'); background-size: 100% 100%; background-repeat: no-repeat; border-radius: 0 0 10px 10px; width:410px; height:450px;">
+			
+			<div id="modal3-img1" class="spinner" style="margin: auto; width: 80%; height: auto; position: relative; top: 18%; left: 0; text-align: center;">
+			  <img style="margin: auto; width: 100%; height: auto;" src="img/img3_2.png"/>
+			</div>
+			
+			<div id="modal3-text" class="shrink" style="margin: auto; width: 100%; position: relative; top: -40%; left: 0; transform: translateY(-50%); padding: 6%; z-index: 4;">
+			  
+			  <a class="tx-info2" style="color: #d9242e;" href="https://www.forbes.com/sites/emsi/2016/08/26/when-it-comes-to-attracting-skilled-talent-its-texas-and-then-everybody-else/#195548b671b3" target="_blank">
+			    <h1 style="text-transform: uppercase; color:#dc6859; font-weight: bold; font-size: 28px; text-align: center; margin-bottom: 0">America's Talent Hub</h1>
+			  </a>
+			  
+			  <div style="width: 100%; margin-left: 3%;">
+			  <h3 style="font-size: 16px; margin-top: 1%;">Texas cities, large and small, continue to attract millennials, families and entrepreneurs. 
+			  It's no wonder Forbes recently declared that "when it comes to attracting skilled talent, 
+			  it's Texas and then everybody else."</h3>
+			  </div>
+			
+			</div>
+		</div>
+		
+		<button style="top: 48%;" type="button" class="btn-lg btn-prev">&#8249</button>
+		<button style="top: 48%;" type="button" class="btn-lg btn-next">&#8250</button>
+		<div class="close" style="top: 5%;" data-dismiss="modal">&#10006;</div>
+		
+	  </div>
+	</div>
+	
+	
+    <!-- Modal4 -->
+	<div id="myModal4" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="texas_center" style="background-image: url('img/img4.png'); background-size: 100% 128%; background-repeat: no-repeat; border-radius: 10px; width:555px; height:475px; margin-top: -1%;">
+	
+	  <div style="margin: auto; width: 80%; position: relative; top: 8%; left: 3%; text-align: center;">
+		
+		<h1 class="slide-right2" style="animation-delay: 0.1s; text-transform: uppercase; color:#d9242e; font-weight: bold; font-size: 25px;">Vibrant Cultural landscape </h1>
+		
+		<h3 class="slide-right2" style="font-size: 14px; text-align: right; margin-top: 0;">"Night and day." That's how one CEO described the difference <br>
+		betoween Silicon Valley and his new Texas headquarters. In <br>
+		Texas, employeres and talent alike enjoy low taxes, <span style="color:#d9242e;">a low <br>
+		cost of housing and high quality education</span> coupled <br>
+		with a vast range of recreational opportunites. Texas <br>
+		offers <span style="color:#d9242e;">the best of city and country lifestyles</span> and <br>
+		each city has something unique to offer.</h3>
+
+	  </div>
+	  
+	  <!-- <div id="modal4-bg" class="bubbles" style="margin: auto; width: 50%; height: 25%; position: relative; top: 10%; left: 20%; text-align: center;"></div>	 -->
+	  <div class="modal4-bg1" id="modal4-bg1">
+	    <a style="height: 50%; width: 50%; margin-left: 18%;" class="tx-info3" href="http://www.texasagriculture.gov/About/TexasAgStats.aspx" target="_blank"></a>
+	    <a style="height: 48%; width: 62%; margin-left: 0%" class="tx-info3" href="https://tpwd.texas.gov/state-parks/state-parks-list.phtml" target="_blank"></a>
+	  </div>
+	  
+	  <div id="modal4-bg2">
+	    <a class="tx-info3" href="https://www.texasmonthly.com/food/where-to-eat-now-2017/" target=" target="_blank"></a>
+	  </div>
+	  
+	  <div id="modal4-bg3"> 
+	    <a class="tx-info3" href="https://www.traveltexas.com/cities-regions/gulf-coast" target="_blank"></a>
+	  </div>
+	  
+	  <div id="modal4-bg4">
+	    <a class="tx-info3" href="https://tpwd.texas.gov/landwater/water/habitats/rivers/" target="_blank"></a>
+	  </div>
+	  
+    </div>
+	
+	<button style="top: 47%" type="button" class="btn-lg btn-prev">&#8249</button>
+	<button style="top: 47%" type="button" class="btn-lg btn-next">&#8250</button>
+	<div class="close" data-dismiss="modal">&#10006;</div>
+		
+	  </div>
+	</div>
+	
+	
+  <!-- Modal5 -->
+	<div id="myModal5" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="texas_center" style="background-image: url('img/img52.png'); background-size: 100% 160%; background-repeat: no-repeat; border-radius: 10px; width: 560px; height:450px;">
+	
+	  <div style="margin: auto; width: 90%; position: relative; top: 5%; left: 2%;">
+		
+		<table style="margin-bottom: -5%;">
+		  <tr>
+		    <td><h3 style="text-transform: uppercase; text-align: center; color:#1c233b; font-weight: bold; font-size: 16px;">Join us to Encourage Companies to</h3></td>
+		    <td><img style="width:auto; height:28px; padding-left: 3px; margin-top: -8px;" src="img/img5_1.png"/></td>
+		  </tr>
+		</table>
+		
+		<a class="tx-info2" style="color: #dc6859;" href="https://businessintexas.com/" target="_blank">
+		  <h1 style="text-transform: uppercase; text-align: center; color:#d9242e; font-weight: bold; font-size: 32px;">Go Big in Texas</h1>
+		</a>
+		
+		<h3 style="font-size: 14px;">Texas Economic Development Corporation (TxEDC) is on the front
+									lines of Texas' economic development and marketing success. Along
+									with the Governor's Office of Economic Development and Tourism
+									(EDT), these two highly focused organizations make up the cornerstone
+									of <a class="tx-info2" href="https://gov.texas.gov/initiatives/economic-advancement" target="_blank">
+									<span style="color:#d9242e; font-weight: bold;">Governor Greg Abbott's economic development agenda.</span></a>
+									<br><br>
+									As an independently funded and operated 501(c)(3) nonprofit
+									organization, TxEDC is made possible through the strong support
+									of our stat's top ecomomic development organizations innovative
+									companies and privately-held enterprises. Through a robust program
+									of national and international investment attraction missions, industry
+									events, media relations and advertising, <a class="tx-info2" href="https://businessintexas.com/about/txedc" target="_blank"><span style="color:#d9242e; font-weight: bold;">TxEDC spreads the word
+									of Texas' business advantages among</span></a> a target audience of corporation
+									decision makers and site selection consultants to let them know they
+									can <a class="tx-info2" href="https://businessintexas.com/" target="_blank"><span style="color:#d9242e; font-weight: bold">Go Big In Texas.</span></a></h3>
+
+	  </div>
+
+  
+    </div>
+	
+	<button type="button" class="btn-lg btn-prev">&#8249</button>
+	<button type="button" class="btn-lg btn-next">&#8250</button>
+	<div class="close" data-dismiss="modal">&#10006;</div>
+		
+	</div>
+  </div>
+  
+  
+  <!-- Modal6 -->
+	<div id="myModal6" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="texas_center" style="background-image: url('img/img6-fade2.png'); background-size: 100% 100%; background-repeat: no-repeat; border-radius: 10px 0 0 10px; width: 422px; height:565px; margin-top: -3%;">
+			<div style="padding: 20px;">
+			
+			<table class="modal6-fade" style="animation-delay: 0.5s; margin-left: -20px; margin-top: -10px;"><tr>
+				<td><img style="width:auto; height:75px;" src="img/img6_1.png"/></td>
+				<td style="margin-left: -1%;"><span style="text-transform: uppercase; font-size: 10px; font-weight: bold; font-family: Arial Narrow,Arial,sans-serif;">
+					<a class="tx-info2" href="https://businessintexas.com/sites/default/files/07/24/17/fastfacts.pdf" target="_blank">
+					  <p style="margin: 5px;">2nd Largest civilian workforce in America</p>
+					</a>
+					<a class="tx-info2" href="https://www.usnews.com/best-colleges/tx" target="_blank">
+					  <p style="margin: 5px;">10 Universites are top-ranked by U.S. News & World 2018</p>
+					</a>
+					<a class="tx-info2" href="http://www.txhighereddata.org/Interactive/Institutions.cfm" target="_blank">
+					  <p style="margin: 5px;">37 universites and upper-division centers keep Texas on top </p>
+					</a>
+					<a class="tx-info2" href="https://tacc.org/tacc/texas-community-colleges" target="_blank">
+					  <p style="margin: 5px;">50 community college districts fuel texas' talent pipeline</p>
+					</a>
+				</span></td>
+					
+			</tr></table>
+			  
+			 <br>
+			  
+			<div style="width: 90%; margin-top: -4%;">
+			  <div class="modal6-fade" style="animation-delay: 0.6s; font-size: 12px; font-weight: bold;">The <span style="color:#d9242e;">Governor's University Research Initiative (GURI)</span><br>
+				promises to keep Texas competitive from a workforce
+				and research perspective. The grant matching program
+				helps Texas higer education institutions recruit
+				distinguished researchers.</div>
+			  
+			  <div class="modal6-fade" style="animation-delay: 0.7s;">
+				<h2 style="margin-top: 2%; text-transform: uppercase; color:#d9242e; font-size: 18px; font-weight: bold;">World-Class Infrastructure</h2>
+				<p style="margin-top: -3%; font-size: 12px; font-weight: bold;">Texas' central location and 
+				<span style="color:#d9242e;">state-of-the-art transportation
+				network</span> provide timely access to domestic and global
+				markets via air, land and sea.</p>
+			  </div>
+			 </div>
+				
+				<div style="width: 90%; text-transform: uppercase;">
+				<table class="modal6-fade" style="animation-delay: 0.8s;">
+				  <tr>
+					<td>
+					  <a class="tx-info2" href="https://businessintexas.com/international/trade-exports" target="_blank">
+					    <h3 style="margin: 2px; font-size: 10px; font-weight: bold; font-family: Arial Narrow,Arial,sans-serif;"><span style="color:#d9242e; font-size: 11px;">#1</span> Exporter for 16 consecutive years</h3>
+					  </a>
+					  <a class="tx-info2" href="https://www.txdot.gov/inside-txdot/division/aviation/airport-directory-list.html" target="_blank">
+					    <h3 style="margin: 2px; font-size: 10px; font-weight: bold; font-family: Arial Narrow,Arial,sans-serif;"><span style="color:#d9242e; font-size: 11px;">380</span> Airports serve Texas travelers</h3>
+					  </a>
+					</td>
+					<td><img style="width:auto; height:35px; margin-top: 12%;" src="img/img6_2.png"/></td>
+				  </tr>
+				</table>
+				
+				<table class="modal6-fade" style="animation-delay: 0.9s; margin-left: -9px; margin-top: -5%;"><tr>
+				  <td><img style="width:45px; height: auto; margin-bottom:-50%;" src="img/img6_3.png"/></td>
+				  <td><a class="tx-info2" href="https://www.artba.org/wp-content/uploads/2016/08/econ_profile_2015_Texas.pdf" target="_blank">
+						<h3 style="font-size: 10px; font-weight: bold; font-family: Arial Narrow,Arial,sans-serif;"><span style="color:#d9242e; font-size: 11px; font-weight; bold;">10,425</span> Miles of freight rail, more than any state</h3>
+				  </a></td>
+				  <td><img style="width:45px; height: auto; margin-bottom: -50%;" src="img/img6_3.png"/></td>
+				</tr></table>
+				
+				<div class="modal6-fade" style="animation-delay: 1s; margin-top: -1%;">
+				<a class="tx-info2" href="https://enforcement.trade.gov/ftzpage/letters/ftzlist-map.html#texas" target="_blank">
+				  <h3 style="margin-left: 0px; margin-top: 0; font-size: 10px; font-weight: bold; font-family: Arial Narrow,Arial,sans-serif;"><span style="color:#d9242e; font-size: 11px;">16</span> Seaports including 32 foreign trade zones (FTZ)</h3>
+				</a>
+				<a class="tx-info2" href="https://businessintexas.com/why-texas/infrastructure" target="_blank">
+				  <h3 style="margin-left: 0px; margin-top: -2%; font-size: 10px; font-weight: bold; font-family: Arial Narrow,Arial,sans-serif;"><span style="color:#d9242e; font-size: 11px;">313,220+</span> Miles of public roads, more than any state</h3>
+				</a>
+				</div>
+				
+				</div>
+			</div>
+		</div>
+			<button style="top: 41.5%;" type="button" class="btn-lg btn-prev">&#8249</button>
+			<button style="top: 41.5%;" type="button" class="btn-lg btn-next">&#8250</button>
+			<div class="close" data-dismiss="modal">&#10006;</div>
+		
+	  </div>
+	</div>
+	
+	
+  <!-- Modal7 -->
+	<div id="myModal7" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="texas_center" style="background-image: url('img/img7_2_2.png'); background-repeat: no-repeat; background-size: 100% 100%; border-radius: 10px 10px 10px 0; width:425px; height: 500px; margin-left: 8%; margin-top: -3%;">
+		<!-- 500pxan no margin left -->
+			
+			<div style="width: 95%; position: relative; top: -3%; left: 0; padding: 20px;">
+			<h1 style="text-transform: uppercase; color:#d9242e; font-weight: bold; font-size: 20px;">Highly Competitive Tax Climate</h1>
+			
+			<h3 style="width: 97%; font-size: 14px; margin-top: 0;">Less government, lower taxes, smarter regulations and
+			right-to-work laws are the economic policies attracting
+			employers to Texas from states that over-tax and over-regulate.
+			Unlike other states, at the state level, Texas has:</h3>
+			</div>
+			
+			<img id="modal7-img4" class="stamp" src="img/img7_4-2.png"/>
+			<img id="modal7-img4-2" class="tax-fade" src="img/img7_4-3.png"/>
+			<!-- <img class="modal7-img4" style="width: 28%; height: auto; margin: auto; position: relative; top: 18%; left: 56%;" src="img/img7_4-1.png"/> -->
+		
+			<div id="blocker" class="block-fade1"></div>
+			<div id="blocker" class="block-fade2"></div>
+			<div id="blocker" class="block-fade3"></div>
+			
+			<div style="width: 57%; position: relative; top: 9%; left: 25%;">
+			<h3 style="font-size: 14px;">The <span style="color:#d9242e;">Texas Enterprise Fund (TEF)</span>
+			is one of the most competitive deal-closing incentive programs
+			in the nation. Since 2004, the <span style="color:#d9242e;">TEF
+			has awarded 150+ grants</span> totaling
+			more than <span style="color:#d9242e;">$600 million</span> across a wide
+			variety of industries and projects.</h3>
+			</div>
+			
+			<!-- <img class="boat-ani" src="img/img7_3.png"/> -->
+	
+	</div>
+	
+		<button style="top: 47%;" type="button" id="p1" class="btn-lg btn-prev">&#8249</button>
+		<!-- <button type="button" id="n1" class="btn-lg btn-next">&#8250</button> -->
+		<div class="close" data-dismiss="modal">&#10006;</div>
+			
+		
+	  </div>
+	</div>
+	
   
   <div id="gobig_center">
-	<!-- <img class="bottom" src="img/gobigtexas_blue.png" alt="Title" width="100%" height="100%"/>-->
-	<img src="img/gobigtexastitle.png" alt="Title" width="100%" height="100%"/>
+	<img style="border-radius: 5px;" src="img/gobigtexastitle.png" alt="Title" width="100%" height="100%"/>
   </div>
   
-  <button id="start_btn" type="button" class="btn btn-danger">Start</button>
-  
-   
-  <div style="width: 15%; position: absolute; top: 46%; left: 24%; z-index: 7;">
-	<p style="font-size: 6px; font-family: impact;">Join us to Encourage Companies to</p>
-  </div>
+  <!-- <button id="start_btn" type="button" class="btn btn-danger">Start</button> -->
+ 
+ 		<div class="border-fade">
+			Click Below to Begin!
+		</div>
+		  
+		<!-- <div id="start-div">
+			<button class="btn-red">Begin</button>
+		</div> -->
+ 
+   <div style="z-index: 10; position: absolute; top: 0; left: 45%; width: 20%; height: 20%;"></div>
   
 </div>
 

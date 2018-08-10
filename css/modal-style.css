@@ -35,7 +35,7 @@
 .close, .close2 {
   position: absolute;
   top: 0%;
-  left: 130%;
+  left: 90%;
   width: 7%;
   height: 7%;
   font-size: 32px;
@@ -665,12 +665,12 @@ position: relative;
 
 
 .stamp {
-	width: 6.5%; 
+	width: 8%; 
 	height: auto; 
 	margin: auto; 
 	position: absolute; 
 	top: 33%; 
-	left: 16%;
+	left: 15%;
 	animation: stamp 5s linear;
 }
 
@@ -700,12 +700,12 @@ position: relative;
 
 
 .tax-fade {
-	width: 6.5%; 
+	width: 8%; 
 	height: auto; 
 	margin: auto;
 	position: absolute; 
 	top: 33%; 
-	left: 16%;
+	left: 15%;
 	animation: tax 5s linear forwards;
 	
 }

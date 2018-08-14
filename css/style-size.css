@@ -1,0 +1,50 @@
+@media screen and (min-width: 0px) {
+    #texas-full {
+        width: 480px; 
+		height: 508px;
+    }
+	#texas-grow {
+        width: 480px; 
+		height: 508px;
+    }
+	#texas-unfold {
+        width: 480px; 
+		height: 508px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #texas-full {
+        width: 600px; 
+		height: 635px;
+    }
+	#texas-grow {
+        width: 600px; 
+		height: 635px;
+    }
+	#texas-unfold {
+        width: 600px; 
+		height: 635px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    #texas-full {
+        width: 750px;
+		height: 793px;
+    }
+	#texas-grow {
+        width: 750px;
+		height: 793px;
+    }
+	#texas-unfold {
+        width: 750px;
+		height: 793px;
+    }
+}
+
+/* @-moz-document url-prefix() {
+    #dots {
+        margin-top: -5%;
+    }
+} */

@@ -5,13 +5,14 @@
 	<link rel="icon" href="img/fa-icon_0.png"/>
 	
 	<!-- css -->
-		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+		<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/bootstrap/bootstrap-theme.min.css" rel="stylesheet" media="screen">
 		
 		<link href="css/style.css" rel="stylesheet">
-		<link href="css/modal-style.css" rel="stylesheet">
-		<link href="css/style_unfold.css" rel="stylesheet" media="screen">
+		<link href="css/style-modal.css" rel="stylesheet">
+		<link href="css/style-unfold.css" rel="stylesheet" media="screen">
 		<link href="css/style-grow.css" rel="stylesheet" media="screen">
+		<link href="css/style-size.css" rel="stylesheet" media="screen">
 		
 		<script src="js/jquery.min.js"></script> 
 		<script src="js/bootstrap.min.js"></script>
@@ -22,55 +23,21 @@
 		 
 	<script>
 		$(document).ready(function() {
-			 $("#texas").hide();
+			 $("#texas-unfold").hide();
 			 $("#texas-full").hide();
 			 $("#texas-grow").hide();
 			
-			 $("#tour_btn").hide();
-			 $("#tour_btn2").hide();
-			 $("#tour_btn3").hide();
-			 $("#tour_btn4").hide();
-			 $("#tour_btn5").hide();
-			 $("#tour_btn6").hide();
-			 $("#tour_btn7").hide();  
+			 //$("#tour_btn").hide();
+			 //$("#modal1").load("slidePages/modal.html"); 
 			
-			$("#modal1").load("slidePages/modal.html"); 
-			$("#modal2").load("slidePages/modal2.html");
-			$("#modal3").load("slidePages/modal3.html");
-			$("#modal4").load("slidePages/modal4.html");
-			$("#modal5").load("slidePages/modal5.html");
-			$("#modal6").load("slidePages/modal6.html");
-			$("#modal7").load("slidePages/modal7.html");
-		
-			
-		
-			  $("#start-div").click(function() {
-				 //$("#gobig_center img.top").fadeOut(500);	
-				 //$("#gobig_center img.top").toggleClass("transparent");	
-				 $("#gobig_center").addClass("transparent");
-				 $("#start-div").delay(750).fadeOut(800);
-				/* $("#tour_btn").delay(5500).fadeIn(100);
-				 $("#tour_btn2").delay(5500).fadeIn(100);
-				 $("#tour_btn3").delay(5500).fadeIn(100);
-				 $("#tour_btn4").delay(5500).fadeIn(100);
-				 $("#tour_btn5").delay(5500).fadeIn(100);
-				 $("#tour_btn6").delay(5500).fadeIn(100);
-				 $("#tour_btn7").delay(5500).fadeIn(100);  */
-				 $("#texas").delay(2500).fadeIn(300); 
-				 $("#texas").delay(2500).addClass("unfold-grow");
-				 $("#texas").delay(2700).fadeOut(300);
-				 $("#texas-grow").delay(5200).fadeIn(100); 
-				// $("#texas-full").delay(5400).fadeIn(100); 
-			 });  
-			 
-			 $("#gobig_center").click(function() {
+			$("#gobig_center").click(function() {
 				 
 				 $("#gobig_center").addClass("transparent");
 				 $(".border-fade").delay(100).fadeOut(200);
 				 
-				 $("#texas").delay(500).fadeIn(300); 
-				 $("#texas").delay(2500).addClass("unfold-grow");
-				 $("#texas").delay(2700).fadeOut(300);
+				 $("#texas-unfold").delay(500).fadeIn(300); 
+				 $("#texas-unfold").delay(2500).addClass("unfold-grow");
+				 $("#texas-unfold").delay(2700).fadeOut(300);
 				 $("#texas-grow").delay(3200).fadeIn(100);  
 			 });  
 			 
@@ -84,26 +51,26 @@
 
 <div style="width:auto; hieght:auto;">
   
-  <div id="texas-full" style="width: 480px; height: 508px;">
+  <div id="texas-full" >
     <img src="img/texas-bg-pic3.png" style="width: 100%; height: 94.8%; position: relative; top: 0; top: 2.5%; left: -13.9%;"/>
   </div>
   
-  <div id="texas" style="width: 480px; height: 508px;">
+  <div id="texas-unfold" >
 	
-	<img style="width: 23.21%; height: auto; border-width: 0px;" id="top-left" alt=" " src="img/img/slice_0_1_3.png"/>
-	<img style="width: 26.73%; height: auto; border-width: 0px;" id="top" alt=" " src="img/img/slice_0_2_4.png"/>
-	<img style="width: 22.64%; height: auto; border-width: 0px;" id="top-right" alt=" " src="img/img/slice_0_3_3.png"/>
+	<img style="width: 23.21%; height: auto; border-width: 0px;" id="top-left" alt=" " src="img/unfold/slice_0_1_3.png"/>
+	<img style="width: 26.73%; height: auto; border-width: 0px;" id="top" alt=" " src="img/unfold/slice_0_2_4.png"/>
+	<img style="width: 22.64%; height: auto; border-width: 0px;" id="top-right" alt=" " src="img/unfold/slice_0_3_3.png"/>
 	
-	<img style="width: auto; height: 28%; border-width: 0px;" id="farleft" alt=" " src="img/img/slice_1_0_3.png"/>
-	<img style="width: 23.21%; height: auto; border-width: 0px;" id="left" alt=" " src="img/img/slice_1_1_3.png"/>
-	<img style="width: 26.73%; height: auto; border-width: 0px;" id="center" alt=" " src="img/img/slice_1_3.png"/>
-	<img style="width: 22.64%; height: auto; border-width: 0px;" id="right" alt=" " src="img/img/slice_1_3_3.png"/>
+	<img style="width: auto; height: 28%; border-width: 0px;" id="farleft" alt=" " src="img/unfold/slice_1_0_3.png"/>
+	<img style="width: 23.21%; height: auto; border-width: 0px;" id="left" alt=" " src="img/unfold/slice_1_1_3.png"/>
+	<img style="width: 26.73%; height: auto; border-width: 0px;" id="center" alt=" " src="img/unfold/slice_1_3.png"/>
+	<img style="width: 22.64%; height: auto; border-width: 0px;" id="right" alt=" " src="img/unfold/slice_1_3_3.png"/>
 	
-	<img style="width: 41.55%; height: auto; border-width: 0px;" id="bottom" alt=" " src="img/img/slice_2_2_3.png"/>
+	<img style="width: 41.55%; height: auto; border-width: 0px;" id="bottom" alt=" " src="img/unfold/slice_2_2_3.png"/>
   
   </div>
   
-  <div id="texas-grow" style="width: 480px; height: 508px;">
+  <div id="texas-grow">
 	
 	<span data-toggle="modal" data-target="#myModal1"><img style="width: 23.26%; height: auto; border-width: 0px;" class="tx-grow" id="topleft-grow" alt=" " src="img/grow/slice_0_1-label4.png"/></span>
 	<span data-toggle="modal" data-target="#myModal2"><img style="width: 27.09%; height: auto; border-width: 0px;" class="tx-grow" id="top-grow" alt=" " src="img/grow/slice_0_2-label3.png"/></span>
@@ -123,9 +90,7 @@
   </div> -->
   
  
-  
-  
-    <!-- Modal1 -->
+	<!-- Modal1 -->
 	<div id="myModal1" class="modal fade" role="dialog" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
 	  <div class="modal-dialog">
 
@@ -194,8 +159,8 @@
 		
 		<table style="background-color:white; text-align: center; width: 100%; border-radius: 0 0 20px 20px;">
 			<tr>
-				<td style="width: 50%;"><img id="modal2-img1" class="img-fade" style="animation-delay: .3s; width:auto; height:35%;" src="img/img2_3.png"/></td>
-				<td style="width: 50%;"><img id="modal2-img2" class="img-fade" style="animation-delay: .7s; width:auto;; height:35%;" src="img/img2_2.png"/></td>
+				<td style="width: 50%;"><img id="modal2-img1" class="img-fade" style="animation-delay: .3s; width:auto; height:55px;" src="img/img2_3.png"/></td>
+				<td style="width: 50%;"><img id="modal2-img2" class="img-fade" style="animation-delay: .7s; width:auto;; height:55px;" src="img/img2_2.png"/></td>
 			</tr>
 			<tr>
 				<td style="color:8489a9; background-color:#222338; width: 50%; padding: 10px; border-right: 10px solid white;"> <!-- border-radius: 0 15px 15px 0;"> -->
@@ -212,8 +177,8 @@
 				</td>
 			</tr>
 			<tr>
-				<td style="width: 50%;"><img id="modal2-img3" class="img-fade" style="animation-delay: .6s; width:auto; height:35%;" src="img/img2_4.png"/></td>
-				<td style="width: 50%;"><img id="modal2-img4" class="img-fade" style="animation-delay: .9s; width:auto; height:35%;" src="img/img2_5.png"/></td>
+				<td style="width: 50%;"><img id="modal2-img3" class="img-fade" style="animation-delay: .6s; width:auto; height:55px;" src="img/img2_4.png"/></td>
+				<td style="width: 50%;"><img id="modal2-img4" class="img-fade" style="animation-delay: .9s; width:auto; height:55px;" src="img/img2_5.png"/></td>
 				</tr>
 			<tr>
 				<td style="color:8489a9; background-color:#222338; width: 50%; padding: 10px; border-right: 10px solid white; border-radius: 0 0 0 20px;">
@@ -254,7 +219,7 @@
 			<div id="modal3-text" class="shrink" style="margin: auto; width: 100%; position: relative; top: -40%; left: 0; transform: translateY(-50%); padding: 6%; z-index: 4;">
 			  
 			  <a class="tx-info2" style="color: #d9242e;" href="https://www.forbes.com/sites/emsi/2016/08/26/when-it-comes-to-attracting-skilled-talent-its-texas-and-then-everybody-else/#195548b671b3" target="_blank">
-			    <h1 style="text-transform: uppercase; color:#dc6859; font-weight: bold; font-size: 28px; text-align: center; margin-bottom: 0">America's Talent Hub</h1>
+			    <h1 style="text-transform: uppercase; color:#d9242e; font-weight: bold; font-size: 28px; text-align: center; margin-bottom: 0">America's Talent Hub</h1>
 			  </a>
 			  
 			  <div style="width: 100%; margin-left: 3%;">
@@ -284,14 +249,16 @@
 	
 	  <div style="margin: auto; width: 80%; position: relative; top: 8%; left: 3%; text-align: center;">
 		
-		<h1 class="slide-right2" style="animation-delay: 0.1s; text-transform: uppercase; color:#d9242e; font-weight: bold; font-size: 25px;">Vibrant Cultural landscape </h1>
+		<a class="tx-info2" href="http://www.thc.texas.gov/preserve/buildings-and-property/cultural-landscapes" target="_blank">
+		  <h1 class="slide-right2" style="animation-delay: 0.1s; text-transform: uppercase; color:#d9242e; font-weight: bold; font-size: 25px;">Vibrant Cultural landscape </h1>
+		</a>
 		
 		<h3 class="slide-right2" style="font-size: 14px; text-align: right; margin-top: 0;">"Night and day." That's how one CEO described the difference <br>
 		betoween Silicon Valley and his new Texas headquarters. In <br>
-		Texas, employeres and talent alike enjoy low taxes, <span style="color:#d9242e;">a low <br>
-		cost of housing and high quality education</span> coupled <br>
+		Texas, employeres and talent alike enjoy low taxes, <a class="tx-info2" href="https://businessintexas.com/why-texas/quality-life" target="_blank"><span style="color:#d9242e; font-weight: bold;">a low <br>
+		cost of housing and high quality education</span></a> coupled <br>
 		with a vast range of recreational opportunites. Texas <br>
-		offers <span style="color:#d9242e;">the best of city and country lifestyles</span> and <br>
+		offers <a class="tx-info2" href="https://businessintexas.com/why-texas/quality-life" target="_blank"><span style="color:#d9242e; font-weight: bold;">the best of city and country lifestyles</span></a> and <br>
 		each city has something unique to offer.</h3>
 
 	  </div>
@@ -310,9 +277,9 @@
 	    <a class="tx-info3" href="https://www.traveltexas.com/cities-regions/gulf-coast" target="_blank"></a>
 	  </div>
 	  
-	  <div id="modal4-bg4">
+	  <!-- <div id="modal4-bg4">
 	    <a class="tx-info3" href="https://tpwd.texas.gov/landwater/water/habitats/rivers/" target="_blank"></a>
-	  </div>
+	  </div> -->
 	  
     </div>
 	
@@ -329,14 +296,14 @@
 	  <div class="modal-dialog">
 
 		<!-- Modal content-->
-		<div class="texas_center" style="background-image: url('img/img52.png'); background-size: 100% 160%; background-repeat: no-repeat; border-radius: 10px; width: 560px; height:450px;">
+		<div class="texas_center" style="background-image: url('img/img5_2.png'); background-size: 100% 160%; background-repeat: no-repeat; border-radius: 10px; width: 560px; height:450px;">
 	
 	  <div style="margin: auto; width: 90%; position: relative; top: 5%; left: 2%;">
 		
 		<table style="margin-bottom: -5%;">
 		  <tr>
 		    <td><h3 style="text-transform: uppercase; text-align: center; color:#1c233b; font-weight: bold; font-size: 16px;">Join us to Encourage Companies to</h3></td>
-		    <td><img style="width:auto; height:28px; padding-left: 3px; margin-top: -8px;" src="img/img5_1.png"/></td>
+		    <td><img style="width:auto; height:28px; padding-left: 3px; margin-top: -8px;" src="img/img5_3.png"/></td>
 		  </tr>
 		</table>
 		
@@ -472,7 +439,9 @@
 		<!-- 500pxan no margin left -->
 			
 			<div style="width: 95%; position: relative; top: -3%; left: 0; padding: 20px;">
-			<h1 style="text-transform: uppercase; color:#d9242e; font-weight: bold; font-size: 20px;">Highly Competitive Tax Climate</h1>
+			<a class="tx-info2" href="https://businessintexas.com/why-texas/low-taxes" target="_blank">
+			  <h1 style="text-transform: uppercase; color:#d9242e; font-weight: bold; font-size: 20px;">Highly Competitive Tax Climate</h1>
+			</a>
 			
 			<h3 style="width: 97%; font-size: 14px; margin-top: 0;">Less government, lower taxes, smarter regulations and
 			right-to-work laws are the economic policies attracting
@@ -489,11 +458,11 @@
 			<div id="blocker" class="block-fade3"></div>
 			
 			<div style="width: 57%; position: relative; top: 9%; left: 25%;">
-			<h3 style="font-size: 14px;">The <span style="color:#d9242e;">Texas Enterprise Fund (TEF)</span>
+			<h3 style="font-size: 14px;">The <a class="tx-info2" href="https://gov.texas.gov/business/page/texas-enterprise-fund" target="_blank"><span style="color:#d9242e; font-weight: bold;">Texas Enterprise Fund (TEF)</span></a>
 			is one of the most competitive deal-closing incentive programs
-			in the nation. Since 2004, the <span style="color:#d9242e;">TEF
-			has awarded 150+ grants</span> totaling
-			more than <span style="color:#d9242e;">$600 million</span> across a wide
+			in the nation. Since 2004, the <a class="tx-info2" href="https://businessintexas.com/services/texas-enterprise-fund" target="_blank"><span style="color:#d9242e; font-weight: bold;">TEF
+			has awarded 150+ grants</span></a> totaling
+			more than <a class="tx-info2" href="https://businessintexas.com/services/texas-enterprise-fund" target="_blank"><span style="color:#d9242e; font-weight: bold;">$600 million</span></a> across a wide
 			variety of industries and projects.</h3>
 			</div>
 			
@@ -511,7 +480,7 @@
 	
   
   <div id="gobig_center">
-	<img class="shadowfilter" style="border-radius: 5px; z-index: 10;" src="img/gobigtexastitle.png" alt="Title" width="100%" height="100%"/>
+	<img class="shadowfilter" style="border-radius: 5px;" src="img/gobigtexastitle.png" alt="Title" width="100%" height="100%"/>
   </div>
   
   <!-- <button id="start_btn" type="button" class="btn btn-danger">Start</button> -->
@@ -529,26 +498,7 @@
 </div>
 
 <script src="js/tx-overlay.js"></script>
-  
-		<script>
-			$("div[id^='myModal']").each(function(){
-  
-			  var currentModal = $(this);
-			  
-			  //click next
-			  currentModal.find('.btn-next').click(function(){
-				currentModal.modal('hide');
-				currentModal.closest("div[id^='myModal']").nextAll("div[id^='myModal']").first().modal('show'); 
-			  });
-			  
-			  //click prev
-			  currentModal.find('.btn-prev').click(function(){
-				currentModal.modal('hide');
-				currentModal.closest("div[id^='myModal']").prevAll("div[id^='myModal']").first().modal('show'); 
-			  });
-
-			});
-		</script>
+<!-- <script src="js/index.js"></script>  --> 
 		
 </body>
 </html>

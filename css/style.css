@@ -108,9 +108,9 @@ div.modal4txt:hover{
 
 .shadowfilter {
 	-webkit-filter: drop-shadow(0px 0px 0px rgba(255,255,255,0.80));
-	-webkit-transition: all 0.4s linear;
-	-o-transition: all 0.4s linear;
-	transition: all 0.4s linear;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
 	
 }.shadowfilter:hover {
 	-webkit-filter: drop-shadow(0px 0px 50px rgba(255,255,255, 1));
@@ -133,14 +133,6 @@ div.modal4txt:hover{
 		transform: scale(0.4);
 		top: 25%;
 	}
-}
-
-#gobig_center img.bottom{
-	z-index:-2;
-}
-
-#gobig_center img.top{
-	z-index:-1;
 }
 
 
@@ -170,48 +162,6 @@ div.modal4txt:hover{
   right: 22%;
   bottom:0;
   top: 15%;
-}
-
-#tour_btn2 {
-  left: 0;
-  right: 0%;
-  bottom:0;
-  top: 30%;
-}
-
-#tour_btn3 {
-  left: 19%;
-  right: 0%;
-  bottom:0;
-  top: 30%;
-}
-
-#tour_btn4 {
-  left: 0;
-  right: 39%;
-  bottom:0;
-  top: 46%;
-}
-
-#tour_btn5 {
-  left: 0;
-  right: 22%;
-  bottom:0;
-  top: 46%;
-}
-
-#tour_btn6 {
-  left: 21%;
-  right: 0;
-  bottom:0;
-  top: 50%;
-}
-
-#tour_btn7 {
-  left: -1%;
-  right: 0;
-  bottom:0;
-  top: 72%;
 }
 
 #start_btn {
@@ -287,10 +237,6 @@ background: #d9242e;
 
 
 
-/* @-moz-document url-prefix() {
-    #dots {
-        margin-top: -5%;
-    }
-} */
+
 
 

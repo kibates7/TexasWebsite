@@ -101,3 +101,54 @@
 
 
 
+@-moz-document url-prefix() {
+
+	#topleft-grow{
+		position: relative;
+		top: -0.1%;
+		left: 13.5%;
+	}
+
+	#top-grow{
+		position: relative;
+		top: -0.7%;
+		left: 12.7%;
+	}
+
+	#topright-grow{
+		position: relative;
+		top: 0.3%;
+		left: 11.9%;
+	}
+
+	#farleft-grow{
+		position: relative;
+		top: -3.1%;
+		left: -14%;
+	}
+
+	#left-grow{
+		position: relative;
+		top: -3.2%;
+		left: -14.8%;
+	}
+
+	#center-grow{
+		position: relative;
+		top: -3.2%;
+		left: -15.5%;
+	}
+
+	#right-grow{
+		position: relative;
+		top: -28.6%;
+		left: 63.9%;
+	}
+
+	#bottom-grow{
+		position: relative;
+		top: -3.4%;
+		left: 8.5%;
+	}
+
+} 

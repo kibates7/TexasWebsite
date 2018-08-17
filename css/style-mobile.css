@@ -1,0 +1,66 @@
+.topnav {
+  overflow: hidden;
+  background-color: #072d74;
+  position: relative;
+  height: 6%;
+  
+}
+
+.topnav a {
+  background: #d9242e;
+  color: white;
+  padding: 1% 1%;
+  height: 100%;
+  text-decoration: none;
+  font-size: 1.5em;
+  text-align: center;
+  display: block;
+}
+
+.topnav div.icon {
+  background: #d9242e;
+  display: block;
+  position: absolute;
+  width: 6%;
+  height: 80%;
+  right: 1%;
+  top: 10%;
+}
+
+.topnav img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 30%;
+  width: auto;
+  height: 50%;
+}
+
+#dpLinks {
+  background-image: url('img/fa-maoble-2.png'); 
+  background-size: auto 100%; 
+  background-repeat: no-repeat;
+  background-color: #072d74;
+  z-index: 10;
+}
+
+#dpLinks a {
+  width: 100%; 
+  position: relative;
+  display: block;
+  text-decoration: none;
+  font-size: 1.8em;
+  color: #fff;
+  border: 2px solid white;
+  z-index: 10;
+}
+
+#dpLinks a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.dpShow {
+  display: none;
+}

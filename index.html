@@ -23,6 +23,11 @@
 		 
 	<script>
 		$(document).ready(function() {
+		
+		  if (screen.width <= 900) {
+			document.location = "mobile_index.html";
+		  }
+			
 			 $("#texas-unfold").hide();
 			 $("#texas-full").hide();
 			 $("#texas-grow").hide();
@@ -52,7 +57,7 @@
 <div style="width:auto; hieght:auto;">
   
   <div id="texas-full" >
-    <img src="img/texas-bg-pic3.png" style="width: 100%; height: 94.8%; position: relative; top: 0; top: 2.5%; left: -13.9%;"/>
+    <img src="img/texas-bg-pic3.png" style="width: 100%; height: 94.8%; position: relative; top: 2.5%; left: -13.9%;"/>
   </div>
   
   <div id="texas-unfold" >
@@ -291,7 +296,7 @@
 	</div>
 	
 	
-  <!-- Modal5 -->
+	<!-- Modal5 -->
 	<div id="myModal5" class="modal fade" role="dialog">
 	  <div class="modal-dialog">
 
@@ -492,6 +497,7 @@
 		<!-- <div id="start-div">
 			<button class="btn-red">Begin</button>
 		</div> -->
+		
  
    <div style="z-index: 10; position: absolute; top: 0; left: 45%; width: 20%; height: 20%;"></div>
   

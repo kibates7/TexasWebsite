@@ -10,20 +10,44 @@
 		<link href="css/style-unfold.css" rel="stylesheet" media="screen">
 		<link href="css/style-grow.css" rel="stylesheet" media="screen">
 		<link href="css/style-size.css" rel="stylesheet" media="screen">
+		<link href="css/style-mobile.css" rel="stylesheet" media="screen">
 		
 		<script src="js/jquery.min.js"></script> 
 		<script src="js/bootstrap.min.js"></script>
 		<!-- <script src="js/tx-overlay.js"></script> -->
 
+		
 	</head>
 		
 	<body>
-	
-		<div style="width: 100%; height: 100%; background-color: white; ">
-		 <div class="shadowfilter">
-			<img class="shadowfilter" style="border-radius: 5px; width: 200px; height: 200px;" src="img/gobigtexastitle.png" alt="Title" width="100%" height="100%"/>
+	<div style="width: 100%; height: 100%; background-color: white;">
+		
+		<!-- Top Navigation Menu -->
+		<div class="topnav">
+		  <a style="font-size: 2.5vh; width: 15%;" href="mobile_index.html" class="active">Go Big Texas</a>
+		 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+		  <div class="icon">
+			<i class="fa fa-bars"></i>
 		  </div>
 		</div>
+		  <!-- Navigation links (hidden by default) -->
+		  <div id="dpLinks" class="dpShow">
+			<a href="#news">News</a>
+			<a href="#contact">Contact</a>
+			<a href="#about">About</a>
+		  </div>
+
+</div>
+
+  <script>
+		  
+		   /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+			$(".icon").click(function() {
+			 $("#dpLinks").toggleClass("dpShow");
+			});
+		  
+		  </script>
+
 		
 	</body>
 </html>
